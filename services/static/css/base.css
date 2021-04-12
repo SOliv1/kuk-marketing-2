@@ -305,11 +305,12 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 116px;
     }
-
+    
+    /* background-colour 
     body {
         height: calc(100vh - 116px);
         background-color: 
-    }
+    }*/
 
     .display-4.logo-font.text-black {
         font-size: 2rem;

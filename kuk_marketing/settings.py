@@ -22,11 +22,11 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY", "")
+SECRET_KEY = os.environ.get("SECRET_KEY", "so-secret")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'DEVELOPMENT' in os.environ
-# DEBUG = True
+# DEBUG = 'DEVELOPMENT' in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = ['kuk-milestone-4.herokuapp.com', 'localhost']
 
@@ -146,12 +146,16 @@ AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
+
     {
         'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
     },
+
     {
+
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
     },
+
     {
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },

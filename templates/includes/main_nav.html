@@ -7,30 +7,29 @@
         </li>
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                All Products
+                Our Properties
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item ">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}" class="dropdown-item">All Products</a>
+                <a href="{% url 'products' %}" class="dropdown-item">Our Properties</a>
             </div>
         </li>
-
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Our Services 
+                About Us 
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
                 <a href="{% url 'products' %}" class="dropdown-item">Our Products</a>
                 <div>
-                    <a class="dropdown-item" href="{% url 'our_services' %}">Our Services</a>
-                    <a class="dropdown-item" href="{% url 'brands' %}">Shine Your Business</a>
+                    <a class="dropdown-item" href="{% url 'about_us' %}">About Us</a>
+                    <a class="dropdown-item" href="{% url 'brands' %}">Our Properties</a>
                     <a class="dropdown-item" href="{% url 'contact' %}">Contact Us</a>
                 </div>
             </div>
         </li>
-
+        
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Brand services
@@ -40,21 +39,19 @@
                 <a href="{% url 'products' %}?category=kitchen_dining" class="dropdown-item">Kitchen &amp Dining;</a>
                 <a href="{% url 'products' %}?category=new_products,bed_bath,kitchen_dining" class="dropdown-item">New Products</a>
             </div> 
-        </li>
-        <li class="nav-item dropdown">
+            <!--code for use lateron
+            <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" id="services-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Expertise
+            Expertise
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="services-link">
                 <a class="dropdown-item" href="{% url 'our_brands' %}">Our Brands</a>
                 <a class="dropdown-item" href="{% url 'graphic_design' %}">Graphic Design</a>
                 <a class="dropdown-item" href="{% url 'digital_marketing' %}">Digital Marketing</a>
             </div>
-        </li>
+        </li>   
     </ul>
-</div>
-
-<div class="collapse navbar-collapse" id="below-main-nav">
+    <div class="collapse navbar-collapse" id="below-main-nav">
     <ul class="navbar-nav w-auto mx-auto">   
         <li class="nav-item dropdown">
             <a class="logo-font font-weight-bold nav-link text-black" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -65,4 +62,4 @@
             </div>
         </li>
     </ul>
-</div>
+</div>  -->

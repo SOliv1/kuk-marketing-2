@@ -1,6 +1,9 @@
 # KUK Marketing
 
-https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master
+[![Build Status](https://travis-ci.com/SOliv1/Blogaboutit.svg?branch=master)](https://travis-ci.com/SOliv1/Blogaboutit)
+
+[![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
+
 #### Table Of Contents
 * General Information
 * Live Demo

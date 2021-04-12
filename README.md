@@ -1,5 +1,5 @@
 # KUK Marketing
-
+[![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master
 #### Table Of Contents
 * General Information

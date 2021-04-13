@@ -1,0 +1,16 @@
+
+{
+    "python.pythonPath": "C:\\Users\\Sara Oliver\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+
+
+    "python.terminal.activateEnvironment": true,
+    "python.linting.enabled": true,
+    "files.autoSave": "onFocusChange",
+    "terminal.integrated.env.windows" : {
+        "SECRET_KEY": "my secret key here",
+        "DEV": "1",
+        "DJANGO_DEBUG": "1"
+    },
+
+}
+

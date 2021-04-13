@@ -18,7 +18,7 @@
 
 ### README  Further information and alternative view via LINK HERE
   README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvm
-  
+
 ## UX Introduction - Platform for B2B lead - Visual appeal
 I wanted to create a visually appealing website to showcase the clean and classic look to a novice customer who is thinking of 
 of purchasing an initial start up project and wants something simple and straight forward without having to think too much about what they require.
@@ -61,21 +61,21 @@ I want to edit / delete / and update with my own requriements by filling out the
 * I love the look and feel of the website. It is clean and aesthetically simple to view and to use.  The images are glorious!
    I want to enquire and discuss my requirements with **KUKMarketing** and look forward to letting my `business shine!`
   **Satisfied Client** 
-  
+
 * I like the website packages available and the opportuntity to come up with my requriements for the `best fit` for improving my current website. 
  * **Looking to Shine**
- 
+
 * I like the idea of buying products and services directly from the website - gettting the quoted price and ordering the products and services I want.  
   I can use a simple form to convey my requirements which will then be evaluated and then open up dialogue between KUKmarketing and myself the (potential)client. 
   **Propspective Client**
-  
+
 ## KUKMarketing = Wireframes and Mockups:
 
 *Please follow the link below to view README.md /wireframes and / Mockups*:
 
 [kuk-ms-4-marketing](http://github.com/SOliv1/ms-4-kuk-marketing/tree/master/readme)
 
-			
+
 ## This Website & Database is heavily based on the Code Institute (C.I.) Boutique-Ado e-commerce fullstack project.
 I chose **postgres** for my project, to use and demonstrate as a powerful fullstack database together with AWS bucket S3 storage facility and IAM users.  This is recommended by **C.I.** in the course. 
 It features the excellent Boutique-Ado online project which I have copied and modified to suit the purposes of my own fullstack website project. My 'Services-App' on the website is mostly my own code gleaned from various C.I. projects and excercise, I have done during the course; chiefly (**C.I.**)'Thorin and Company and Bootstrap4' and my own Procol Harum project(**First Milestone**).
@@ -269,9 +269,9 @@ Under my repository name, I click to clone my repository in Desktop. I follow th
    1.   `cp - r` means copy recursively
    1.   cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/*
             -This copies or the allauth templates in the packages so they can be styled.
-          
+
    1.   Getbootstrap.com > go to documentation and copy the starter template 
-```    
+```
 #### Font stories  
         *About Montsaratt and Roboto*
 
@@ -428,7 +428,6 @@ class CustomClearableFileInput(ClearableFileInput):
     input_text = _('')
     template_name = 'products/custom_widget_templates/custom_clearable_file_input.html'
 ```
-					
 ### Features Left to Implement:
 			* Search box to search the website packages and products in a more cohesive and timely manner
 			* Sort code to sort through products and website categories

@@ -6,10 +6,10 @@ from django.contrib import messages
 """view-link to return our services menu on main-nav bar"""
 
 
-def our_services(request):
+def about_us(request):
     """ A view to our services page """
 
-    return render(request, 'services/our_services.html')
+    return render(request, 'services/about_us.html')
 
 
 def brands(request):

@@ -11,6 +11,8 @@
 <link rel="stylesheet" href="{% static 'services/css/services.css' %}">
 {% endblock %}
 
+
+
 {% block extra_js %}
 <!-- Bootstrap extra JavaScript for services app -->
     <script src="{ url_for('services/static', filename='vendor/jquery/jquery.min.js') }"></script>
@@ -19,48 +21,69 @@
     <script src="{ url_for('services/static', filename='js/clean-blog.min.js') }"></script>
 {% endblock %}
 
+
 {% block content %}
     <div class="container-fluid h-100">
-        <div class="card">
+        <div class="mx-auto" style="width: 200px;">
             <div class="card-body">
                 <div class="row h-100">
                     <div class="card bg-white text-dark">
-                        <img class="card-img" src="https://kuk-milestone-4.s3.amazonaws.com/media/shine_bus.jpg" alt="Card image">
+                        <br>
+                        <br>
+                        <br>
+                        <br>
+                        <img class="card-img" src="https://browser-teal-parrot-qvudeqr9.ws-eu03.gitpod.io/workspace/kuk-marketing/media/white_logo_color_background.jpg" alt="KUK_Logo" >
                     </div>
                 </div>
-            </div>    
-        </div>  
-        <div class="callout jumbotron text-center, jumbotron-bg">
-        <div class="card" style="width: 85 rem, center;">
-            <h5 class="card-title center">KUK marketing</h5>
-            <p class="card-text center">KUK takes business on line and shine!</p>
-            <p class="lead">Shine your business today!</p>
+            </div>  
+        </div> 
+        <div>     
+            <h4 class="display-4 logo-font text-black main-header.style">
+                About Us
+            </h4> 
         </div>
-    
-        <div class="col-7 col-md-6 my-auto">  
-                <h4 class="display-4 logo-font text-black main-header.style">
-                    About Us
-                </h4>
-            </div>
-            <div class = "lead">We are a niche marketing business with the aim of shining in a fast pace world. 
-            </div> 
-                <div>
-                    <p>We thrive on bringing out the best results for our clients
-                    and positively blaze on the internet, social media and beyond!
-                    </p>
+        <div class="card" style="width: 40rem;">
+            <div class="card-body">
+                <h4 class="card-title logo-font text-black main-header.style">Why Kensington Fields</h4>
+            <div class="row gx-5">
+                <div class="col-sm-9">
+                    <div class="row">
+                        <div class="col-8 col-sm-6">
+                            <p>We provide student homes in Liverpool, most specifically Kensington Fields. Since 2008, we have housed 100s of students.  We respond to the changing needs and expectations of Liverpool's students and strive to offer good value and quality accommodation.</p>
+                            <p>We offer accommodation with everything included for your convenience - utilities, broadband and TV. There is nothing else topay as we don't charge any administration or application fees.</p>
+                        </div>
+                        <div class="col-4 col-sm-6">
+                            <p>We adhere and adapt to regulation of the rental market, both locally and nationally. You can be reassured that all our properties comply with all necessary safety standards.
+                            </p> You can be reassured that all our properties comply with all necessary safety standards. As private landlords we have a vested interest in our properties and aim to provide good housing at a competitive price.  We are fully compliant and manage our houses professionally.</p>
+                        </div>
+                    </div>
                 </div>
-            <div class="row">
-                <div class="col-7 my-auto">
+            </div>        
+            <div class="row row-col-sm-6 my-auto">          
+                <div class="col-8 .col-sm-6 my-auto">
+                    <p>We hope to find you and your friends a home from home during your studies in Liverpool. Have have look at some of our tenant testimonial here.</p>
+                    <p>Call or email us and we will help you find your new student home.</p>
+                    <div class="row row-col-sm-6 my-auto">  
+                        <div class="col-8 .col-sm-6 my-auto">
+                                <h4><span>Stay safe!</span></h4>
+                            </div>
+                        </div>       
+                    </div>
+                </div>
+                <br>            
+                <div class="row">
+                <div class="col-7 .col-4 .col-sm-6 my-auto">
                     <h4>
-                        Contact us now to discuss how we can help...
+                        Contact us now to discuss your requirements
                     </h4>
                 </div>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'contact' %}" class="buy-now-button btn btn-lg rounded-0 text-uppercase py-3">Get a Quote today</a>
+                        <a href="{% url 'contact' %}" class="buy-now-button btn btn-lg rounded-0 text-uppercase py-3">Get Quote</a>
                     </h4>
                 </div>
             </div>
         </div>
     </div>
+            
 {% endblock %}

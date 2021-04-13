@@ -1,4 +1,4 @@
-.env.py 
+.env.py
 .gitpod.dockerfile
 .gitpod.yml
 __pycache__/

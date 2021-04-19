@@ -52,7 +52,7 @@
     {% endblock %}</title>
   </head>
   <body>
-  
+
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
@@ -86,7 +86,7 @@
                         <div class="dropdown-menu border-0" aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                                <a href="{% url 'add_product' %}"class="dropdown-item">Product Management</a>
+                                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
                                 {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
@@ -124,7 +124,7 @@
         </div>
         <hr class="block-divider, id=block-divider--bg-black">
     </header>
-    
+
 
     {% if messages %}
         <div class="message-container">
@@ -143,7 +143,7 @@
             {% endfor %}
         </div>
     {% endif %}
-   
+
     {% block page_header %}
     {% endblock %}
 
@@ -156,6 +156,6 @@
     </script>
     {% endblock %}
 
-    
+
   </body>
 </html>

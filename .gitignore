@@ -1,4 +1,6 @@
-
-env.py
-env.py
 .env.py
+.gitpod.dockerfile
+.gitpod.yml
+__pycache__/
+.theia
+.travis.yml

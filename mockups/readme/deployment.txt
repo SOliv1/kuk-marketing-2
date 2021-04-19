@@ -1,0 +1,99 @@
+____Heroku deploymen____
+
+by Anna Greaves
+**note
+many thanks for these notes on Slack-mucn appreciated. SJK**
+
+1. to get commands you can use for heroku toolbelt (already installed in cmd) in terminal: heroku
+2. in terminal: heroku apps
+3. follow steps to log into heroku if needed
+4. to update heroku if needed. in terminal: heroku update
+5. install django packages. in terminal: pip install gunicorn
+6. in terminal: pip install psycopg2~=2.8.2
+7. in terminal: pip freeze --local > requirements.txt
+8. in terminal: heroku create <unique app name> --region eu
+9. in terminal: git remote -v 
+   ^ this will give a list of remote repositories for this project
+
+__set up database__
+1. in terminal: heroku addons:create heroku-postgresql:hobby-dev
+2. log into heroku and go to the app dashboard
+3. click on settings > config vars to find the DATABASE_URL string
+5. in terminal: pip install dj_database_url
+6. in terminal: pip freeze --local > requirements.txt
+7. in terminal: heroku config 
+	^ this will show that the DATABASE_URL has been stored 
+8. in settings.py file, comment out the DATABASES section
+9. create a new DATABASES section wtih the postgres string'
+example: 
+DATABASES = {'default': dj_database_url.parse("postgres://<rest of postgres url here>")}
+10. add "import dj_database_url" under "import os" in settings.py file
+11. in terminal: python manage.py migrate
+12. in terminal: echo web: gunicorn django_todo.wsgi:application > Procfile
+13. in terminal: heroku config:set DISABLE_COLLECTSTATIC=1
+14. Add heroku app name to ALLOWED_HOSTS in settings.py
+15. ** make sure to commit all changes before trying to push to heroku **
+16. in terminal: git push heroku master
+
+__to link heroku to github__
+1. go to herokyu dashbaord, click on "deploy"
+2. in "deployment method" section, click on GitHub
+3. put in github repo name then click > search > select
+4. manually deploy from this place any time you want to update the live website.
+
+__django enviroment variables__
+1. in settings.json add following env vars:
+
+    "terminal.integrated.env.windows" : {
+        "SECRET_KEY": "<secret key here>",
+		"HOSTNAME": "<local host address here>",
+        "DEVELOPMENT": "1",
+        "DJANGO_DEBUG": "1",
+    }
+
+2. in settings.py file change following:
+
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY = os.environ.get('SECRET_KEY')
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG = True
+
+ALLOWED_HOSTS = [os.environ.get('HOSTNAME')]
+
+DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+
+3. IMPORTANT - Restart vscode before checking if this works. Envroment variable are activated on restarting vscode.
+4. set SECRET_KEY in config vars on heroku dashboard
+
+__Setting up different databases for local development & heroku__
+1. in settings.py, right under imports add:
+
+if os.environ.get('DEVELOPMENT'):
+    development = True
+else:
+    development = False
+
+2. scroll down to database section, and adjust DATABASES to the folowing: 
+if development:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+else:
+    DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
+
+__to test if it works locally__
+1. in terminal: python manage.py runserver 
+2. ctrl-click local link provided in terminal 
+
+to test if it works on heroku
+1. push most recent code to github
+2. log into heroku dashboard for app
+3. click deploy
+4. scroll down to "Manual deploy"
+5. select correct branch of github code
+6. click "deploy branch"
+7. Once build is completed, click "view" button

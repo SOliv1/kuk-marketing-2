@@ -12,22 +12,10 @@ def about_us(request):
     return render(request, 'services/about_us.html')
 
 
-def brands(request):
-    """ A view to brands page """
+def why_kensington_fields(request):
+    """ A view to why-kensington-fields page """
 
-    return render(request, 'services/brands.html')
-
-
-def about(request):
-    """ view to return the about page """
-
-    return render(request, 'services/about.html')
-
-
-def our_brands(request):
-    """ A view to our_brands page """
-
-    return render(request, 'services/our_brands.html')
+    return render(request, 'services/why_kensington_fields.html')
 
 
 def contact(request, methods=["GET", "POST"]):
@@ -39,16 +27,6 @@ def contact(request, methods=["GET", "POST"]):
     """ view-link to return about us menu on main-nav bar"""
 
 
-def graphic_design(request):
-    """ A view to graphic design page """
-
-    return render(request, 'services/graphic_design.html')
-
-
-def web_design(request):
-    """ A view to web design page """
-
-    return render(request, 'services/web_design.html')
 
 
 

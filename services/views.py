@@ -51,19 +51,8 @@ def web_design(request):
     return render(request, 'services/web_design.html')
 
 
-def web_development(request):
-    """ A view to web developmnet page """
-
-    return render(request, 'services/web_development.html')
 
 
-def digital_marketing(request):
-    """ A view to digital marketing page """
-
-    return render(request, 'services/digital_marketing.html')
 
 
-def calculator(request):
-    """ A view to show a calculator page """
 
-    return render(request, 'services/calculator.html')

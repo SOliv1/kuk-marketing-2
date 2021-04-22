@@ -48,7 +48,7 @@
 .jumbotron medium {
     font-size: 60%;
     font-style: italic;
-    color: #000; 
+    color: #000;
 }
 
 
@@ -78,7 +78,7 @@
 
 .bg-transparent {
 background-color: transparent;
-} 
+}
 
 /*-- containers --*/
 
@@ -136,12 +136,11 @@ background-color: transparent;
 .p-classcard-text-style {
     border-top-width: 30px;
     margin-top: 20px;
-    padding-left: 15px;   
+    padding-left: 15px;
 }
 
 .col-7 .my-auto .h4-syle.h4-style   {
     border-left-width: 30px;
     padding-left: 30px;
 }
-    
-      
+

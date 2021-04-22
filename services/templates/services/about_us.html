@@ -3,22 +3,32 @@
 <!-- {% load static %} -->
 {% load static %}
 
-{% block extra_css %}SS
+{% block extra_css %}
 <!-- Bootstrap extra clean-blog for services app -->
 <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.min.css') }" >
 <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/clean-blog.css') }" >
 <link rel="stylesheet" href="{ url_for('services/static', filename='services/css/services.css') }" >
 <link rel="stylesheet" href="{% static 'services/css/services.css' %}">
 {% endblock %}
+pytho
+{% block extra_meta %}
+    <!-- favicon files -->
 
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" sizes="36x36" href="../static/favicon/android-icon-36x36.png">
+    <link rel="shortcut icon" type="image/png" sizes="48x48" href="../static/favicon/android-icon-48x48.png">
+    <link rel="shortcut icon" type="image/png" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">
+    <!--<link rel="shortcut icon" type="image/png" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">-->
 
+    {% endblock %}
 
 {% block extra_js %}
 <!-- Bootstrap extra JavaScript for services app -->
-    <script src="{ url_for('services/static', filename='vendor/jquery/jquery.min.js') }"></script>
-    <script src="{ url_for('services/static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }"></script>
+    <script src="{ url_for('static', filename='vendor/jquery/jquery.min.js') }"></script>
+    <script src="{ url_for('static', filename='vendor/bootstrap/js/bootstrap.bundle.min.js') }"></script>
     <!-- Custom scripts for services template -->
-    <script src="{ url_for('services/static', filename='js/clean-blog.min.js') }"></script>
+    <script src="{ url_for('static', filename='js/clean-blog.min.js') }"></script>
 {% endblock %}
 
 

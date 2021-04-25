@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% load static %}
+
+
+{% block extra_media %}
+    <link rel="shortcut icon" type="media/dark_logo_transparent_background.png" href="media/dark_logo_transparent_background.png" />
+{% endblock %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="container">
+        {% for x in video %}
+        <h3 class="text-center mt-2 mb-2">{{x.caption}}</h3>
+            <video class="embed-responsive embed-responsive-16by9"   controls="controls" >
+            <source src="{{x.video.url}}" type="video/mp4" />
+          </video>
+        {% endfor %}
+    </div>
+{% endblock %}

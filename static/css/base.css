@@ -8,8 +8,8 @@ html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
-    
-        
+
+
 body {
     background: url('/media/background_2020-09_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -144,10 +144,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -192,6 +192,43 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
+
+/* ---------------------------Social Links */
+
+
+.social-links {
+    padding-bottom: 15px;
+}
+
+.social-links li a i {
+    width: 32px;
+    height: 32px;
+    padding: 12px 0;
+    border-radius: 50%;
+    font-size: 13px;
+    line-height: 7px;
+    text-align: center;
+    color: #fafafa;
+    background: #8f8f8f;
+    transition: all 0.35s ease-in-out;
+    -moz-transition: all 0.35s ease-in-out;
+    -webkit-transition: all 0.35s ease-in-out;
+    -o-transition: all 0.35s ease-in-out;
+}
+
+.social-links li a i:hover {
+    background:rgb(204, 0, 0);
+}
+
+#footer-details {
+    padding: 20px;
+}
+
+
+
+
+
+
 
 /* -------------------------------- Media Queries */
 
@@ -246,7 +283,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content input[type='submit']:hover {
 	color: #fff;
     background-color: rgb(204, 0, 0);
     border-color: rgb(0, 0, 0);
@@ -305,11 +342,11 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 116px;
     }
-    
-    /* background-colour 
+
+    /* background-colour
     body {
         height: calc(100vh - 116px);
-        background-color: 
+        background-color:
     }*/
 
     .display-4.logo-font.text-black {

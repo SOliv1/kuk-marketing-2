@@ -39,7 +39,7 @@ body {
     width: fit-content;
 }
 
-.buy-now-button {
+.view-now-button {
     background:rgb(204, 0, 0);
     color: white;
     min-width: 260px;
@@ -63,9 +63,9 @@ body {
     color: white !important;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
+.view-now-button:hover,
+.view-now-button:active,
+.view-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -98,7 +98,7 @@ body {
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.3);
 	z-index: -1;
 }
 
@@ -226,10 +226,6 @@ input[name='q']::placeholder {
 
 
 
-
-
-
-
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -279,6 +275,7 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
+
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -418,7 +415,7 @@ input[name='q']::placeholder {
     background-color: #444;
 }
 
-.block-divider--orange {
+.block-divider--red {
     background-color: rgb(204, 0, 0);
 }
 
@@ -449,7 +446,7 @@ input[name='q']::placeholder {
 .btn--red {
     color: black;
     background-color:transparent;
-    border-color: #f05f40;
+    border-color: #0;
 }
 
 .btn--red:hover,

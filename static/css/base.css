@@ -446,7 +446,7 @@ input[name='q']::placeholder {
 .btn--red {
     color: black;
     background-color:transparent;
-    border-color: #0;
+    border-color: rgb(204, 0, 0)
 }
 
 .btn--red:hover,

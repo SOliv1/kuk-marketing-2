@@ -87,12 +87,12 @@
 
     export_STRIPE_WH_SECRET= ''
 
-            test card no = 
+            test card no =
             4242424242424242
-    second test card no. to trigger the overlay spinner:- 
+    second test card no. to trigger the overlay spinner:-
         test card spinner:- 4000002500003155
-    -   to test the integrations for stripe payments and the spinner overlay.        
-  
+    -   to test the integrations for stripe payments and the spinner overlay.
+
 ## Services app
 
 ### Contact html 

@@ -28,11 +28,13 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
+.logo-font .span {
     text-transform: uppercase;
+    color:#cc0000;
+
 }
 
-/* our_brands */
+/* About_us */
 
 
 .main-logo-link {
@@ -40,27 +42,27 @@ body {
 }
 
 .view-now-button {
-    background:rgb(204, 0, 0);
+    background:#cc0000;
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background:rgb(204, 0, 0);
+    background:#cc0000;
     color: white;
 }
 
 .btn-outline-black {
-    background: white;
-    color: black !important;  /* use important to override link colors for <a> elements */
+    background: #ffffff;
+    color: #000000 !important;  /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: black;
-    color: white !important;
+    background: #000000;
+    color: #ffffff !important;
 }
 
 .view-now-button:hover,
@@ -78,7 +80,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #000000 !important;
 }
 
 .block-divider {
@@ -148,7 +150,7 @@ input[name='q']::placeholder {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #000000;
     position: absolute;
     top: -10px;
     right: 36px;

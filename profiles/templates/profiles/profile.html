@@ -1,6 +1,6 @@
-{% load static %}
-
 {% extends "base.html" %}
+
+{% load static %}
 
 
 {% block extra_css %}
@@ -75,13 +75,13 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 {% endblock %}
 
 
 {% block postloadjs %}
         {{ block.super }}
         <script type="text/javascript" src="{% static 'profiles/js/countryfield.js' %}"></script>
-        {% endblock %}
+
 
 {% endblock %}

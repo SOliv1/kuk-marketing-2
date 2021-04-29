@@ -52,12 +52,11 @@
     {% endblock %}</title>
   </head>
   <body>
-
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>KUK</strong>Marketing</h2>
+                    <h2 class="logo-font text-black my-0"><strong><span>KUK</span></strong>Marketing</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -152,33 +151,36 @@
 
     <!-- Footer -->
     <footer>
+        <br>
+        <br>
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-md-10 mx-auto social-links">
-                    <ul class="list-inline text-center">
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://twitter.com">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 col-sm-4
+                 social-links">
+                <ul class="list-inline text-center">
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://twitter.com">
                                 <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span>
                             </a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://facebook.com">
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://facebook.com">
                                 <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
                         </span></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://instagram.com">
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://instagram.com">
                                 <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
                         </span></a>
-                        </li>
-                        <li class="list-inline-item">
-                            <a target="_blank" href="https://linkedIn.com">
+                    </li>
+                    <li class="list-inline-item">
+                        <a target="_blank" href="https://linkedIn.com">
                                 <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-linkedin fa-stack-1x fa-inverse"></i>
@@ -186,7 +188,7 @@
                         </a>
                     </li>
                     <li class="list-inline-item">
-                            <a target="_blank" href="https://pinterest.com">
+                        <a target="_blank" href="https://pinterest.com">
                             <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-pinterest fa-stack-1x fa-inverse"></i>
@@ -194,14 +196,13 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted">Copyright &copy; KUK 2021<p>
+                <p class="copyright text-muted center-block">Copyright &copy; KUK 2021<p>
             </div>
         </div>
 
     </footer>
 
     <!-- Bootstrap core JavaScript -->
-
 
     {% block postloadjs %}
     <script type="text/javascript">

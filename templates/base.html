@@ -14,13 +14,12 @@
 
     {% block extra_meta %}
     <!-- favicon files -->
-
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
-    <link rel="shortcut icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" type="image/png" sizes="36x36" href="../static/favicon/android-icon-36x36.png">
-    <link rel="shortcut icon" type="image/png" sizes="48x48" href="../static/favicon/android-icon-48x48.png">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="\static\favicon\favicon-32x32.png">
+    <link rel="shortcut icon" type="image/png" sizes="16x16" href="\static\favicon\favicon-16x16.png">
+    <link rel="shortcut icon" type="image/png" sizes="36x36" href="\static\favicon/android-icon-36x36.png">
+    <link rel="shortcut icon" type="image/png" sizes="48x48" href="\static\favicon\android-icon-48x48.png">
+    <link rel="shortcut icon" type="image/png" sizes="57x57" href="\static\favicon\apple-icon-57x57.png">
     <link rel="shortcut icon" type="image/png" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">
-    <!--<link rel="shortcut icon" type="image/png" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">-->
 
     {% endblock %}
 
@@ -48,7 +47,7 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>KUK<span> Marketing{% block extra_title %}
+    <title>KUKMarketing{% block extra_title %}
     {% endblock %}</title>
   </head>
   <body>
@@ -96,20 +95,7 @@
                             {% endif %}
                         </div>
                     </li>
-                    <li class="list-inline-item">
-                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-black{% endif %} nav-link" href="{% url 'view_bag' %}">
-                            <div class="text-center">
-                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
-                                <p class="my-0">
-                                    {% if grand_total %}
-                                        ${{ grand_total|floatformat:2 }}
-                                    {% else %}
-                                        $0.00
-                                    {% endif %}
-                                </p>
-                            </div>
-                        </a>
-                    </li>
+
                 </ul>
             </div>
         </div>
@@ -152,8 +138,6 @@
 
     <!-- Footer -->
     <footer>
-        <br>
-        <br>
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-8 col-md-10 col-sm-4
@@ -164,7 +148,7 @@
                                 <span class="fa-stack fa-lg">
                         <i class="fa fa-circle fa-stack-2x"></i>
                         <i class="fa fa-twitter fa-stack-1x fa-inverse"></i></span>
-                            </a>
+                        </a>
                     </li>
                     <li class="list-inline-item">
                         <a target="_blank" href="https://facebook.com">
@@ -197,10 +181,12 @@
                         </a>
                     </li>
                 </ul>
-                <p class="copyright text-muted center-block">Copyright &copy; KUK 2021<p>
+                <div>
+                <p class="copyright text-muted center-block">Copyright &copy; KUK 2021
+                <p>
+                </div>
             </div>
         </div>
-
     </footer>
 
     <!-- Bootstrap core JavaScript -->

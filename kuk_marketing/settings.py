@@ -55,7 +55,7 @@ INSTALLED_APPS = [
     'checkout',
     'profiles',
     'services',
-    'video',
+    'embed_video',
 
 
     # Other

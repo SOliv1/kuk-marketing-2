@@ -9,21 +9,26 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
+.containter, .container-fluid, .row {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background: url('/media/background_2020-09_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 174px);
     color: #555;
+    background-color: transparent;
     font-family: 'Montserrat';
 }
 
 
 /* from Bulma */
 .icon {
-    align-items: center;
+    align-items: right;
     display: inline-flex;
-    justify-content: center;
+    justify-content: right;
     height: 1.5rem;
     width: 1.5rem;
 }
@@ -100,7 +105,7 @@ body {
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.3);
+	background: rgba(0, 0, 0, 0.2);
 	z-index: -1;
 }
 
@@ -289,7 +294,9 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
+    color: #17a2b8; /* text-info */
+    background-color: rgb(204, 0, 0);
+    border-color: rgb(0, 0, 0);
 }
 
 /* Product Form */

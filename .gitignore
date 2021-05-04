@@ -4,3 +4,5 @@
 __pycache__/
 .theia
 .travis.yml
+env.py 
+rm 'env.py'

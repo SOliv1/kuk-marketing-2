@@ -9,70 +9,63 @@ html {
     font-family: 'Montserrat', sans-serif;
 }
 
-.containter, .container-fluid, .row {
-    margin: 0;
-    padding: 0;
-}
 
 body {
     background: url('/media/background_2020-09_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 174px);
     color: #555;
-    background-color: transparent;
     font-family: 'Montserrat';
 }
 
 
 /* from Bulma */
 .icon {
-    align-items: right;
+    align-items: center;
     display: inline-flex;
-    justify-content: right;
+    justify-content: center;
     height: 1.5rem;
     width: 1.5rem;
 }
 
-.logo-font span {
+.logo-font {
     text-transform: uppercase;
-    color:#cc0000;
-
 }
 
-/* About_us */
+/* our_brands */
 
 
 .main-logo-link {
     width: fit-content;
 }
 
-.view-now-button {
-    background:#cc0000;
+.buy-now-button {
+    background:rgb(204, 0, 0);
     color: white;
     min-width: 260px;
 }
 
 .btn-black {
-    background:#cc0000;
+    background:rgb(204, 0, 0);
     color: white;
 }
 
 .btn-outline-black {
-    background: #ffffff;
-    color: #000000 !important;  /* use important to override link colors for <a> elements */
+    background: white;
+    color: black !important;  /* use important to override link colors for <a> elements */
     border: 1px solid black;
 }
 
 .btn-outline-black:hover,
 .btn-outline-black:active,
 .btn-outline-black:focus {
-    background: #000000;
-    color: #ffffff !important;
+    background: black;
+    color: white !important;
 }
 
-.view-now-button:hover,
-.view-now-button:active,
-.view-now-button:focus,
+.shop-now-button:hover,
+.shop-now-button:active,
+.shop-now-button:focus,
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
@@ -85,7 +78,7 @@ body {
 }
 
 .border-black {
-    border: 1px solid #000000 !important;
+    border: 1px solid black !important;
 }
 
 .block-divider {
@@ -105,7 +98,7 @@ body {
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.2);
+	background: rgba(0, 0, 0, 0.1);
 	z-index: -1;
 }
 
@@ -155,7 +148,7 @@ input[name='q']::placeholder {
     height: 0;
     border-left: 4px solid transparent;
     border-right: 4px solid transparent;
-    border-bottom: 10px solid #000000;
+    border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -199,39 +192,6 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
-
-/* ---------------------------Social Links */
-
-
-.social-links {
-    padding-bottom: 15px;
-}
-
-.social-links li a i {
-    width: 32px;
-    height: 32px;
-    padding: 12px 0;
-    border-radius: 50%;
-    font-size: 13px;
-    line-height: 7px;
-    text-align: center;
-    color: #fafafa;
-    background: #8f8f8f;
-    transition: all 0.35s ease-in-out;
-    -moz-transition: all 0.35s ease-in-out;
-    -webkit-transition: all 0.35s ease-in-out;
-    -o-transition: all 0.35s ease-in-out;
-}
-
-.social-links li a i:hover {
-    background:rgb(204, 0, 0);
-}
-
-#footer-details {
-    padding: 20px;
-}
-
-
 
 /* -------------------------------- Media Queries */
 
@@ -282,7 +242,6 @@ input[name='q']::placeholder {
     border-radius: 0;
 
     /* standard bootstrap btn transitions */
-
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
 }
 
@@ -294,9 +253,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content a {
-    color: #17a2b8; /* text-info */
-    background-color: rgb(204, 0, 0);
-    border-color: rgb(0, 0, 0);
+	color: #17a2b8; /* text-info */
 }
 
 /* Product Form */
@@ -424,7 +381,7 @@ input[name='q']::placeholder {
     background-color: #444;
 }
 
-.block-divider--red {
+.block-divider--orange {
     background-color: rgb(204, 0, 0);
 }
 
@@ -455,7 +412,7 @@ input[name='q']::placeholder {
 .btn--red {
     color: black;
     background-color:transparent;
-    border-color: rgb(204, 0, 0)
+    border-color: #f05f40;
 }
 
 .btn--red:hover,

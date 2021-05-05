@@ -32,8 +32,6 @@ else:
     debug = False
 
 
-
-
 ALLOWED_HOSTS = ['kuk-gradpads.herokuapps.com','localhost']
 
 
@@ -109,10 +107,10 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
-    # Needed to login by username in Django admin, regardless of `allauth`
+    # Needed to login by username in Django admin, # # # # # # regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
-    # `allauth` specific authentication methods, such as login by e-mail
+    # `allauth` specific authentication methods, such as  login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 

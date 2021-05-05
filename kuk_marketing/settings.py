@@ -12,7 +12,7 @@ import os
 import dj_database_url
 
 if os.path.exists('env.py'):
-    import env
+ import env
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -32,7 +32,7 @@ else:
     debug = False
 
 
-ALLOWED_HOSTS = ['kuk-gradpads.herokuapps.com','localhost']
+ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -58,7 +58,6 @@ INSTALLED_APPS = [
 
 
     # Other
-
     'crispy_forms',
     'storages',
 
@@ -107,10 +106,10 @@ TEMPLATES = [
 MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 AUTHENTICATION_BACKENDS = (
-    # Needed to login by username in Django admin,  #regardless of `allauth`
+    # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
-    # `allauth` specific authentication methods, such as  login by e-mail
+    # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
 )
 

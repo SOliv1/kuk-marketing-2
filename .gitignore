@@ -9,3 +9,12 @@ env.py
 .vscode
 .github
 .theia
+media
+video
+mockups
+db.sqlite3
+.vscode-upload.json
+README.md
+
+
+

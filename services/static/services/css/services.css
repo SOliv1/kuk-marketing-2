@@ -76,8 +76,9 @@
     width: 100%;
 }
 
-.bg-transparent {
-background-color: transparent;
+.bg-transparent bg-white {
+    background-color: white;
+    background-color: transparent;
 }
 
 /*-- containers --*/
@@ -112,14 +113,13 @@ background-color: transparent;
 
 /*--- contact-us ---*/
 
-.overlay-contact {
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-	position: absolute;
-	background: rgba(0, 0, 0, 0.5);
-	z-index: -1;
+.opaque-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
 }
 
 /*--- digital marketing page ---*/

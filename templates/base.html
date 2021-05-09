@@ -14,14 +14,14 @@
 
     {% block extra_meta %}
     <!-- favicon files -->
-
+    
     <link rel="shortcut icon" type="image/png" sizes="32x32" href="../static/favicon/favicon-32x32.png">
     <link rel="shortcut icon" type="image/png" sizes="16x16" href="../static/favicon/favicon-16x16.png">
     <link rel="shortcut icon" type="image/png" sizes="36x36" href="../static/favicon/android-icon-36x36.png">
     <link rel="shortcut icon" type="image/png" sizes="48x48" href="../static/favicon/android-icon-48x48.png">
     <link rel="shortcut icon" type="image/png" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">
     <!--<link rel="shortcut icon" type="image/png" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">-->
-
+  
     {% endblock %}
 
     {% block corecss %}
@@ -55,9 +55,9 @@
 
     <header class="container-fluid fixed-top">
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-center text-lg-left">
+            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-right text-lg-right">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
-                    <h2 class="logo-font text-black my-0"><strong>KUK</strong>Marketing</h2>
+                    <h2 class="logo-font text-black my-0"><strong><span>KUK</span></strong>Marketing</h2>
                 </a>
             </div>
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
@@ -79,7 +79,7 @@
                     <li class="list-inline-item dropdown">
                         <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
-                                <i class="fas fa-user"></i>
+                                <i class="fas fa-grad-user"></i>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
@@ -147,15 +147,22 @@
     {% block page_header %}
     {% endblock %}
 
-    {% block content %}
+    
+    {% block content %}   
     {% endblock %}
+
+    <div class container>
+        <div class="row justify-content-sm-center">   
+            <img class="card-img bg-transparent" src="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/1-croppedhooray.png">        
+        </div>
+    </div>
+
 
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
-
-
+    
   </body>
 </html>

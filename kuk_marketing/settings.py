@@ -52,12 +52,9 @@ INSTALLED_APPS = [
     'products',
     'checkout',
     'bag',
-    'checkout',
     'profiles',
     'services',
     'video',
-
-
 
     # Other
     'crispy_forms',
@@ -65,6 +62,7 @@ INSTALLED_APPS = [
 
 ]
 
+git 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

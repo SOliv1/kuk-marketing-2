@@ -62,7 +62,7 @@ INSTALLED_APPS = [
 
 ]
 
-git 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',

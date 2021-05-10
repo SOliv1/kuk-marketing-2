@@ -1,11 +1,12 @@
+from video.apps import VideoConfig
 from django.db import models
-from embed_video.fields import EmbedVideoField
+
 
 
 # Create your models here.
 
 class Item(models.Model):
-    video = EmbedVideoField()  # same like models.URLField()
+    video = VideoConfig()  # same like models.URLField()
 
 
 class Video(models.Model):

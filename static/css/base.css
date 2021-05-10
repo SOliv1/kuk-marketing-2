@@ -28,8 +28,10 @@ body {
     width: 1.5rem;
 }
 
-.logo-font {
+.logo-font .span {
     text-transform: uppercase;
+    color: #cc0000;
+
 }
 
 /* our_brands */
@@ -39,7 +41,7 @@ body {
     width: fit-content;
 }
 
-.buy-now-button {
+.view-now-button {
     background:rgb(204, 0, 0);
     color: white;
     min-width: 260px;
@@ -98,7 +100,7 @@ body {
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.3);
 	z-index: -1;
 }
 

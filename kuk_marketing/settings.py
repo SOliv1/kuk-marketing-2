@@ -27,9 +27,9 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 if os.environ.get("DEVELOPMENT"):
-    development = True
-else:
-    debug = False
+ development = True
+# else:
+debug = False
 
 
 ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost']
@@ -50,10 +50,12 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
+    'checkout',
     'bag',
     'profiles',
     'services',
-    'embed_video',
+    'video',
+
 
 
     # Other
@@ -83,6 +85,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
+            os.path.join(BASE_DIR, 'templates', 'video'),
             ],
         'APP_DIRS': True,
         'OPTIONS': {

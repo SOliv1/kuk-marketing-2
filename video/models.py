@@ -1,16 +1,17 @@
-from video.apps import VideoConfig
+
 from django.db import models
 
-
+from embed_video.fields import EmbedVideoField
 
 # Create your models here.
 
-class Item(models.Model):
-    video = VideoConfig()  # same like models.URLField()
-
-
 class Video(models.Model):
-    caption=models.CharField(max_length=100)
-    video=models.FileField(upload_to="video/%y")
+    title = models.CharField(max_length=100)
+    added = models.DateTimeField(auto_now_add=True)
+    url = EmbedVideoField()
+
     def __str__(self):
-        return self.caption
+        return str(self.title)
+
+        class Meta:
+            ordering = ['-added']

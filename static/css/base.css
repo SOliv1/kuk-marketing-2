@@ -28,10 +28,16 @@ body {
     width: 1.5rem;
 }
 
-.logo-font .span {
+
+.logo-font {
     text-transform: uppercase;
     color: #cc0000;
 
+}
+
+span {
+    text-transform: uppercase;
+    color: #cc0000;
 }
 
 /* our_brands */
@@ -111,7 +117,7 @@ a.category-badge > span.badge:hover {
 
 .btt-button {
     height: 42px;
-    width: 42px;
+    width: 40px;
     position: fixed;
     bottom: 10px;
     right: 10px;

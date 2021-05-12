@@ -56,3 +56,8 @@
 form .form-group:first-child .floating-label-form-group {
   border-top: 1px solid $gray-300;
 }
+
+card-img .bg-white .bg-transparent {
+  background-color: $white !important;
+  background-color: transparent !important;
+}

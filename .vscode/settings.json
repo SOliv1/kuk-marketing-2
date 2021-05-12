@@ -1,6 +1,6 @@
 
 {
-    "python.pythonPath": "C:\\Users\\Sara Oliver\\AppData\\Local\\Programs\\Python\\Python39\\python.exe",
+    "python.pythonPath": "env\\Scripts\\python.exe",
 
 
     "python.terminal.activateEnvironment": true,
@@ -11,6 +11,8 @@
         "DEV": "1",
         "DJANGO_DEBUG": "1"
     },
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
 
 }
 

@@ -14,12 +14,12 @@
 
     {% block extra_meta %}
     <!-- favicon files -->
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="\static\favicon\favicon-32x32.png">
-    <link rel="shortcut icon" type="image/png" sizes="16x16" href="\static\favicon\favicon-16x16.png">
-    <link rel="shortcut icon" type="image/png" sizes="36x36" href="\static\favicon/android-icon-36x36.png">
-    <link rel="shortcut icon" type="image/png" sizes="48x48" href="\static\favicon\android-icon-48x48.png">
-    <link rel="shortcut icon" type="image/png" sizes="57x57" href="\static\favicon\apple-icon-57x57.png">
-    <link rel="shortcut icon" type="image/png" sizes="57x57" href="../static/favicon/apple-icon-57x57.png">
+    <link rel="shortcut icon" type="image\png" sizes="32x32" href="\static\favicon\favicon-32x32.png">
+    <link rel="shortcut icon" type="image\png" sizes="16x16" href="\static\favicon\favicon-16x16.png">
+    <link rel="shortcut icon" type="image\png" sizes="36x36" href="\static\favicon\android-icon-36x36.png">
+    <link rel="shortcut icon" type="image\png" sizes="48x48" href="\static\favicon\android-icon-48x48.png">
+    <link rel="shortcut icon" type="image\png" sizes="57x57" href="\static\favicon\apple-icon-57x57.png">
+    <link rel="shortcut icon" type="image\png" sizes="57x57" href="..\static\favicon/apple-icon-57x57.png">
 
     {% endblock %}
 
@@ -36,15 +36,6 @@
     <link rel="stylesheet" href="{% static 'services/css/services.css' %} ">
     {% endblock %}
 
-    {% block extra_meta %}
-    <!-- favicon files -->
-    <link rel="shortcut icon" type="image\png" sizes="32x32" href="\static\favicon\favicon-32x32.png">
-    <link rel="shortcut icon" type="image\png" sizes="16x16" href="\static\favicon\favicon-16x16.png">
-    <link rel="shortcut icon" type="image\png" sizes="36x36" href="\static\favicon\android-icon-36x36.png">
-    <link rel="shortcut icon" type="image\png" sizes="48x48" href="\static\favicon\android-icon-48x48.png">
-    <link rel="shortcut icon" type="image\png" sizes="57x57" href="\static\favicon\apple-icon-57x57.png">
-
-    {% endblock %}
 
     {% block extra_media %}
     <link rel="icon" type="image\x-icon" href="{{url_for('static', filename='favicon\favicon.ico')}}">
@@ -92,17 +83,17 @@
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
                 <ul class="list-inline list-unstyled text-center text-lg-right  my-0">
                     <li class="list-inline-item dropdown">
-                        <a class="text-black nav-link" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="text-black nav-link" href="#"     id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
                                 <i class="fas fa-user-graduate"></i>
                                 <p class="my-0">My Account</p>
                             </div>
                         </a>
-                        <div class="dropdown-menu border-0" aria-labelledby="user-options">
+                        <div class="dropdown-menu border-0"    aria-labelledby="user-options">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
                                 <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                                {% endif %}
+                            {% endif %}
                                 <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
                                 <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
                             {% else %}
@@ -111,7 +102,6 @@
                             {% endif %}
                         </div>
                     </li>
-
                 </ul>
             </div>
         </div>
@@ -148,6 +138,7 @@
 
     {% block page_header %}
     {% endblock %}
+
 
     {% block content %}
     {% endblock %}
@@ -208,12 +199,18 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <div class container>
+        <div class="row justify-content-sm-center">
+            <img class="card-img bg-transparent" src="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/1-croppedhooray.png">
+        </div>
+    </div>
 
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
+
 
   </body>
 </html>

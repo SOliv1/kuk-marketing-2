@@ -4,7 +4,6 @@
 __pycache__/
 .theia
 .travis.yml
-<<<<<<< HEAD
 env.py
 .env/
 .vscode
@@ -18,6 +17,3 @@ db.sqlite3
 README.md
 media/
 
-=======
-env/
->>>>>>> cee2b40ffd31001f8d7b39c2186d2a39c5cf711e

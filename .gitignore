@@ -4,3 +4,4 @@ env.py
 __pycache__/
 .theia
 .travis.yml
+node_modules

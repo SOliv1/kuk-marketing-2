@@ -1,8 +1,8 @@
 # kuk-marketing-2
 
-# KUK Marketing
+# KUK Marketing default-master
 [![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
-# KUK Marketing
+# KUK Marketing new-features
 [![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=new-features)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 
 #### Table Of Contents

@@ -27,7 +27,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 
 if os.environ.get("DEVELOPMENT"):
     development = True
- else:
+# else:
 debug = False
 
 

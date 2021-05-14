@@ -14,12 +14,13 @@
 
     {% block extra_meta %}
     <!-- favicon files -->
-    <link rel="shortcut icon" type="image\png" sizes="32x32" href="s3://kuk-marketing-2/media/favicon/favicon-32x32.png">
-    <link rel="shortcut icon" type="image\png" sizes="16x16" href="s3://kuk-marketing-2/media/favicon/favicon-16x16.png">
-    <link rel="shortcut icon" type="image\png" sizes="36x36" href="s3://kuk-marketing-2/media/favicon/android-icon-36x36.png">
-    <link rel="shortcut icon" type="image\png" sizes="48x48" href="s3://kuk-marketing-2/media/favicon/android-icon-48x48.pngg">
-    <link rel="shortcut icon" type="image\png" sizes="57x57" href="s3://kuk-marketing-2/media/favicon/apple-icon-57x57.png">
-    <link rel="shortcut icon" type="image\png" sizes="57x57" href="s3://kuk-marketing-2/media/favicon/android-icon-72x72.png">
+    <link rel="shortcut icon" type="image\png" sizes="32x32" href="\media\favicon\favicon-32x32.png">
+    <link rel="shortcut icon" type="image\png" sizes="16x16" href="\media\favicon\favicon-16x16.png">
+    <link rel="shortcut icon" type="image\png" sizes="36x36" href="\media\favicon\android-icon-36x36.png">
+    <link rel="shortcut icon" type="image\png" sizes="48x48" href="\media\favicon\android-icon-48x48.png">
+    <link rel="shortcut icon" type="image\png" sizes="57x57" href="\media\favicon\apple-icon-57x57.png">
+    <link rel="shortcut icon" type="image\png" sizes="57x57" href="\media\favicon/apple-icon-57x57.png">
+
 
     {% endblock %}
 
@@ -38,8 +39,8 @@
 
 
     {% block extra_media %}
-    <link rel="icon" type="image\x-icon" href="{{url_for('static', filename='favicon\favicon.ico')}}">
-    <link rel="shortcut icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='s3://kuk-marketing-2/media/favicon/favicon.ico')}}">
+    <link rel="icon" type="image\x-icon" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/favicon.ico">
+    <link rel="shortcut icon" type="image/png" sizes="32x32" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/favicon.ico">
     {% endblock %}
 
     {% block corejs %}

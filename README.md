@@ -1,7 +1,11 @@
 # kuk-marketing-2
 
-# KUK Marketing
+# KUK Marketing default-master
 [![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
+# KUK Marketing new-features
+[![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=new-features)](https://travis-ci.com/SOliv1/kuk-marketing-2)
+
+[![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=new-features)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 
 #### Table Of Contents
 * General Information
@@ -17,7 +21,7 @@
 * Credits
 * Conclusion
 
-###  LIVE DEMO CAN BE FOUND AT HEROKU: https://kuk-milestone-4.herokuapp.com/
+###  LIVE DEMO (THIS IS A WORK IN PRGRESS) CAN BE FOUND AT HEROKU: https://kuk-marketing-2.herokuapp.com/
 
 >### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
 > README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit 

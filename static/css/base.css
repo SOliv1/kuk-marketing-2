@@ -8,8 +8,8 @@ html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
-    
-        
+
+
 body {
     background: url('/media/background_2020-09_cropped.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -28,8 +28,16 @@ body {
     width: 1.5rem;
 }
 
+
 .logo-font {
     text-transform: uppercase;
+    color: #cc0000;
+
+}
+
+span {
+    text-transform: uppercase;
+    color: #cc0000;
 }
 
 /* our_brands */
@@ -39,7 +47,7 @@ body {
     width: fit-content;
 }
 
-.buy-now-button {
+.view-now-button {
     background:rgb(204, 0, 0);
     color: white;
     min-width: 260px;
@@ -98,7 +106,7 @@ body {
 	top: 0;
 	left: 0;
 	position: absolute;
-	background: rgba(0, 0, 0, 0.1);
+	background: rgba(0, 0, 0, 0.3);
 	z-index: -1;
 }
 
@@ -109,7 +117,7 @@ a.category-badge > span.badge:hover {
 
 .btt-button {
     height: 42px;
-    width: 42px;
+    width: 40px;
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -144,10 +152,10 @@ input[name='q']::placeholder {
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
 .arrow-up {
-    width: 0; 
-    height: 0; 
+    width: 0;
+    height: 0;
     border-left: 4px solid transparent;
-    border-right: 4px solid transparent; 
+    border-right: 4px solid transparent;
     border-bottom: 10px solid black;
     position: absolute;
     top: -10px;
@@ -246,7 +254,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
+.allauth-form-inner-content input[type='submit']:hover {
 	color: #fff;
     background-color: rgb(204, 0, 0);
     border-color: rgb(0, 0, 0);
@@ -305,11 +313,11 @@ input[name='q']::placeholder {
     .header-container {
         padding-top: 116px;
     }
-    
-    /* background-colour 
+
+    /* background-colour
     body {
         height: calc(100vh - 116px);
-        background-color: 
+        background-color:
     }*/
 
     .display-4.logo-font.text-black {

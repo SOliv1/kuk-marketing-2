@@ -5,14 +5,13 @@ For more information on this file, see
 https://docs.djangoproject.com/en/3.0/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.0/ref/settings/
-
 """
 
 import os
 import dj_database_url
 
-# if os.path.exists('env.py'):
-#    import env
+if os.path.exists('env.py'):
+    import env
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -22,16 +21,16 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get("SECRET_KEY", "my secret key here")
+SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 
-# SECURITY WARNING: don't run with debug turned on in production!
+# SECURITY WARNING: don't run with debug turned on in production! new-features
 if os.environ.get("DEVELOPMENT"):
     development = True
 else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['127.0.0.1', "HOST",'localhost']
+ALLOWED_HOSTS = ['kuk-milestone-4.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -49,17 +48,18 @@ INSTALLED_APPS = [
     'allauth.socialaccount',
     'home',
     'products',
-    'bag',
     'checkout',
+    'bag',
     'profiles',
     'services',
+    'video',
 
     # Other
-
     'crispy_forms',
     'storages',
 
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
@@ -82,6 +82,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
+            os.path.join(BASE_DIR, 'templates', 'video'),
             ],
         'APP_DIRS': True,
         'OPTIONS': {
@@ -197,7 +198,7 @@ if 'USE_AWS' in os.environ:
 
     # Bucket Config
 if 'USE_AWS' in os.environ:
-    AWS_STORAGE_BUCKET_NAME = 'kuk-milestone-4'
+    AWS_STORAGE_BUCKET_NAME = 'kuk-marketing-2'
     AWS_S3_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.environ.get('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.environ.get('AWS_SECRET_ACCESS_KEY')
@@ -235,3 +236,5 @@ else:
     EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
+
+    DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

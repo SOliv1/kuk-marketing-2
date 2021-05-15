@@ -4,8 +4,10 @@ from .models import Video
 
 # Register your models here.
 
+
 class AdminVideo(AdminVideoMixin, admin.ModelAdmin):
     pass
+
 
 admin.site.register(Video, AdminVideo)
 

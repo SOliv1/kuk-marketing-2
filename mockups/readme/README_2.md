@@ -2,7 +2,7 @@
 
 ****    'set up environmental variables and create touch .gitignore'
 
-        'os.environ["Variable Name Here"] = "Value of Variable Goes Here"'
+        'os.environ["Variable Name Here"] = 'Value of Variable Goes Here'
 
 ****  ##    Add Products to Product App
 

@@ -27,8 +27,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 
 if os.environ.get("DEVELOPMENT"):
     development = True
-# else:
-debug = False
+else:
+    debug = False
 
 
 ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost']

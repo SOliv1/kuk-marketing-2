@@ -23,15 +23,14 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 
-# SECURITY WARNING: don't run with debug turned on in production!
-
+# SECURITY WARNING: don't run with debug turned on in production! new-features
 if os.environ.get("DEVELOPMENT"):
- development = True
+    development = True
 else:
-    debug = False
+    DEBUG = False
 
 
-ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com']
+ALLOWED_HOSTS = ['kuk-milestone-4.herokuapp.com', 'localhost']
 
 
 # Application definition

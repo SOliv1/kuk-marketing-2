@@ -27,8 +27,8 @@ SECRET_KEY = os.environ.get("SECRET_KEY", "my secret key here")
 # SECURITY WARNING: don't run with debug turned on in production!
 if os.environ.get("DEVELOPMENT"):
     development = True
-   else:
-    DEBUG = True
+else:
+    DEBUG = False
 
 
 ALLOWED_HOSTS = ['127.0.0.1', "HOST",'localhost']

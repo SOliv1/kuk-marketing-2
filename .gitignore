@@ -10,7 +10,6 @@ env.py
 .github
 .theia
 media
-video/
 mockups
 db.sqlite3
 .vscode-upload.json

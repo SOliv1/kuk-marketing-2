@@ -30,8 +30,9 @@ else:
     DEBUG = False
 
 
-ALLOWED_HOSTS = ['kuk-milestone-4.herokuapp.com', 'localhost']
+# ALLOWED_HOSTS = ['kuk-milestone-4.herokuapp.com', 'localhost']#
 
+ALLOWED_HOSTS = ['127.0.0.1', "HOST",'localhost']
 
 # Application definition
 
@@ -52,8 +53,7 @@ INSTALLED_APPS = [
     'bag',
     'profiles',
     'services',
-    'embed_video',
-    'video',
+    
 
 
     # Other

@@ -1,13 +1,35 @@
 {% extends "base.html" %}
 {% load static %}
 
+{% block extra_css %}
+    <link rel="stylesheet" href="{% static 'services/css/services.css' %}">
+{% endblock %}
+
+
+
+{% block extra_meta %}
+    <!-- favicon files -->
+    <link rel="shortcut icon" type="image\png" sizes="32x32" href="\static\favicon\favicon-32x32.png">
+    <link rel="shortcut icon" type="image\png" sizes="16x16" href="\static\favicon\favicon-16x16.png">
+    <link rel="shortcut icon" type="image\png" sizes="36x36" href="\static\favicon\android-icon-36x36.png">
+    <link rel="shortcut icon" type="image\png" sizes="48x48" href="\static\favicon\android-icon-48x48.png">
+    <link rel="shortcut icon" type="image\png" sizes="57x57" href="\static\favicon\apple-icon-57x57.png">
+{% endblock %}
+
+{% block extra_media %}
+    <link rel="shortcut icon" type="image\png" sizes="32x32" href="\static\favicon\favicon-32x32.png">
+{% endblock %}
+
 {% block page_header %}
-    <div class="container header-container">
-        <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
-                <h4 class="display-4 logo-font text-black, main-header.style">
-                   Contact Us
-                </h4>
+
+<div class="container header-container">
+    <div class="opaque-overlay">&nbsp;</div>
+    <div class="row h-100">
+        <div class="col-lg-7 col-md-6 my-auto">
+            <br>
+            <h4 class="display-4 logo-font text-black, main-header.style">
+                Contact Us
+            </h4>
                  <!-- form requirements-start-->
                 <form method="POST" name="sentRequirements" id="contactForm">
                     <div class="control-group-requirements">
@@ -24,16 +46,16 @@
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                  	<div class="control-group-requirements">
+                  	<div class="control-group-requirements>
                         <label for="contactFormControlSelect1">Select a Package</label >
-                        <select class="form-control" id="contactFormControlSelect1" >
+                        <select class="form-control" id="contactFormControlSelect1>
                             <option>property requirements</option >
                             <option>One or two beds</option >
                             <option>A whole house for you and your fellow students!</option >
                         </select>
                     </div>
                     <div class="control-group-requirements">
-                        <label for="contactFormControlTextarea" rows="1">Please enter your requirements and let us choose the best fit</label>
+                        <label for="contactFormControlTextarea" rows="1">Please enter any other requirements</label>
                         <textarea class="form-control" id="contactFormControlTextarea1" rows="8"></textarea>
                         <br>
                         <div id="requirements-success">
@@ -45,7 +67,21 @@
                     {% csrf_token %}
                     {{ form|crispy }}
                 </form>
+
             </div>
         </div>
-    </div>
+        <div class="card-body">
+            <div class="card-header">
+            </span><strong><h4>Quote</h4></strong><span>
+        </div>
+        <div class="card-body">
+            <blockquote class="blockquote mb-0">
+                <p>A well-known quote, contained in a blockquote element.</p>
+                <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+            </blockquote>
+        </div>
+        <div class="card mb-3">
+            <img class="img-img-center img-fluid" src="\media\1-croppedhooray.png"
+            class="card-img-bottom" alt="1-hooray-cropped">
+        </div>
 {% endblock %}

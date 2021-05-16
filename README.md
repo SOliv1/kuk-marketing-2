@@ -2,6 +2,7 @@
 
 # KUK Marketing default-master
 [![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
+
 # KUK Marketing new-features
 [![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=new-features)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 
@@ -19,7 +20,7 @@
 * Credits
 * Conclusion
 
-###  LIVE DEMO CAN BE FOUND AT HEROKU: https://kuk-milestone-4.herokuapp.com/
+###  LIVE DEMO (THIS IS A WORK IN PRGRESS) CAN BE FOUND AT HEROKU: https://kuk-marketing-2.herokuapp.com/
 
 >### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
 > README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit
@@ -512,7 +513,7 @@ whitenoise==5.2.0
         pip3 install django dj-database-url
         pip3 install boto3
         pip3 install django-storages
-   1.gi
+   1.
 ### JQuery and Java Script
 The project uses JQuery to simplify DOM manipulation.
 Java script for forms and validation.

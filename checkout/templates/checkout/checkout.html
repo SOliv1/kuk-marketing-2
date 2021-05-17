@@ -2,9 +2,21 @@
 {% load static %}
 {% load bag_tools %}
 
-{% block extra_css %}
-    <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
-{% endblock %}
+    {% block extra_css %}
+        <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+    {% endblock %}
+
+    {% block extra_meta %}
+    <link rel="shortcut icon" type="image\png" sizes="32x32" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/favicon-32x32.png">
+    <link rel="shortcut icon" type="image\png" sizes="16x16" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/favicon-16x16.png">
+    <link rel="shortcut icon" type="image\png" sizes="36x36" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/android-icon-36x36.png">
+    <link rel="shortcut icon" type="image\png" sizes="48x48" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/android-icon-48x48.png">
+    <link rel="shortcut icon" type="image\png" sizes="57x57" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/apple-icon-57x57.png">
+    {% endblock %}
+
+    {% block extra_media %}
+    <link rel="shortcut icon" type="image\ico" sizes="32x32" href="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/favicon/favicon.ico">
+    {% endblock %}
 
 {% block page_header %}
     <div class="container header-container">

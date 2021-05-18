@@ -3,9 +3,10 @@ ____Heroku deploymen____
 by Anna Greaves
 **note
 many thanks for these notes on Slack-mucn appreciated. SJK**
-
+npm install -g heroku
 1. to get commands you can use for heroku toolbelt (already installed in cmd) in terminal: heroku
-2. in terminal: heroku apps
+2. in terminal: 
+
 3. follow steps to log into heroku if needed
 4. to update heroku if needed. in terminal: heroku update
 5. install django packages. in terminal: pip install gunicorn
@@ -31,8 +32,18 @@ DATABASES = {'default': dj_database_url.parse("postgres://<rest of postgres url 
 11. in terminal: python manage.py migrate
 12. in terminal: echo web: gunicorn django_todo.wsgi:application > Procfile
 13. in terminal: heroku config:set DISABLE_COLLECTSTATIC=1
+heroku config:set DISABLE_COLLECTSTATIC=1 --app kuk-marketing-2
+checking for errors if collectatci does not work as expected:
+
+**Run locally both commands:
+
+*python manage.py collectstatic
+*python manage.py test
+
+13.a https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku
 14. Add heroku app name to ALLOWED_HOSTS in settings.py
-15. ** make sure to commit all changes before trying to push to heroku **
+15. 
+** make sure to commit all changes before trying to push to heroku **
 16. in terminal: git push heroku master
 
 __to link heroku to github__

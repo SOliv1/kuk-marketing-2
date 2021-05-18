@@ -16,5 +16,4 @@ db.sqlite3
 .vscode-upload.json
 README.md
 media/
-
 node_modules

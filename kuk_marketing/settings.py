@@ -32,6 +32,7 @@ else:
 
 
 ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost']
+# ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -53,12 +54,11 @@ INSTALLED_APPS = [
     'bag',
     'profiles',
     'services',
-    'video',
+
 
     # Other
     'crispy_forms',
     'storages',
-
 ]
 
 

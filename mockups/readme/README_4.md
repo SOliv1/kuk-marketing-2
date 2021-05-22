@@ -16,7 +16,7 @@
     ` nano .gitignore ` to check that the file is still there (then exit out) by pressing enter
 1.          `git status `
 1. #BUGS  I encounted:-
-##  Export your DATABASE_URL in Gitpod - very important!
+##  Export(set in vscode:) your DATABASE_URL in Gitpod - very important!
         export DATABASE_URL="Paste your PostGRES connection string in quotes"
         then make your migrations
         then loaddata
@@ -31,9 +31,8 @@
     # `allauth` specific authentication methods, such as login by e-mail
     '
 ##  Deploying to heroku
-    1.
-   1.
-   1.  To check heroku logs on the gitpod terminal:
+    1. 1. in vscode export does not work but "set" does so
+     set          DATABASE_URL="blah" 1.  To check heroku logs on the gitpod terminal:
        follow these steps f you quit the server with Ctrl+C then type
     1.  `heroku login -i`
     1.  `heroku config:set DISABLE_COLLECTSTATIC=1 --app kuk-milestone-4`

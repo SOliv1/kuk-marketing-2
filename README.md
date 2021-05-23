@@ -1,16 +1,8 @@
 # kuk-marketing-2
 
 # KUK Marketing
-[![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
-
-https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg
-
+[![Bld Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 [![wakatime](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg)](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2)
-
-!https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg!:https://wakatime.com/badge/github/SOliv1/kuk-marketing-2
-
-{<img src="https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg" alt="wakatime" />}[https://wakatime.com/badge/github/SOliv1/kuk-marketing-2]
-
 
 
 

@@ -3,7 +3,18 @@
 # KUK Marketing
 [![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 
-[![Build Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=new-features)](https://travis-ci.com/SOliv1/kuk-marketing-2)
+https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg
+
+[![wakatime](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg)](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2)
+
+!https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg!:https://wakatime.com/badge/github/SOliv1/kuk-marketing-2
+
+{<img src="https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg" alt="wakatime" />}[https://wakatime.com/badge/github/SOliv1/kuk-marketing-2]
+
+
+
+
+
 
 #### Table Of Contents
 * General Information

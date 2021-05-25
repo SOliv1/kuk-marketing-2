@@ -1,16 +1,14 @@
-.env.py
+ env.py
 .gitpod.dockerfile
 .gitpod.yml
 __pycache__/
 .theia
 .travis.yml
-env.py
 .env/
 .vscode
 .github
 .theia
 media
-video/
 mockups
 db.sqlite3
 .vscode-upload.json

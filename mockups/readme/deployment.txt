@@ -5,7 +5,7 @@ by Anna Greaves
 many thanks for these notes on Slack-mucn appreciated. SJK**
 npm install -g heroku
 1. to get commands you can use for heroku toolbelt (already installed in cmd) in terminal: heroku
-2. in terminal: 
+2. in terminal: npm install -g heroku
 
 3. follow steps to log into heroku if needed
 4. to update heroku if needed. in terminal: heroku update

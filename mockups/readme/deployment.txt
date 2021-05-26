@@ -5,7 +5,7 @@ by Anna Greaves
 many thanks for these notes on Slack-mucn appreciated. SJK**
 npm install -g heroku
 1. to get commands you can use for heroku toolbelt (already installed in cmd) in terminal: heroku
-2. in terminal: 
+2. in terminal:
 
 3. follow steps to log into heroku if needed
 4. to update heroku if needed. in terminal: heroku update
@@ -13,7 +13,7 @@ npm install -g heroku
 6. in terminal: pip install psycopg2~=2.8.2
 7. in terminal: pip freeze --local > requirements.txt
 8. in terminal: heroku create <unique app name> --region eu
-9. in terminal: git remote -v 
+9. in terminal: git remote -v
    ^ this will give a list of remote repositories for this project
 
 __set up database__
@@ -22,11 +22,11 @@ __set up database__
 3. click on settings > config vars to find the DATABASE_URL string
 5. in terminal: pip install dj_database_url
 6. in terminal: pip freeze --local > requirements.txt
-7. in terminal: heroku config 
-	^ this will show that the DATABASE_URL has been stored 
+7. in terminal: heroku config
+	^ this will show that the DATABASE_URL has been stored
 8. in settings.py file, comment out the DATABASES section
 9. create a new DATABASES section wtih the postgres string'
-example: 
+example:
 DATABASES = {'default': dj_database_url.parse("postgres://<rest of postgres url here>")}
 10. add "import dj_database_url" under "import os" in settings.py file
 11. in terminal: python manage.py migrate
@@ -42,7 +42,7 @@ checking for errors if collectatci does not work as expected:
 
 13.a https://stackoverflow.com/questions/36665889/collectstatic-error-while-deploying-django-app-to-heroku
 14. Add heroku app name to ALLOWED_HOSTS in settings.py
-15. 
+15.
 ** make sure to commit all changes before trying to push to heroku **
 16. in terminal: git push heroku master
 
@@ -85,7 +85,7 @@ if os.environ.get('DEVELOPMENT'):
 else:
     development = False
 
-2. scroll down to database section, and adjust DATABASES to the folowing: 
+2. scroll down to database section, and adjust DATABASES to the folowing:
 if development:
     DATABASES = {
         'default': {
@@ -97,8 +97,8 @@ else:
     DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 
 __to test if it works locally__
-1. in terminal: python manage.py runserver 
-2. ctrl-click local link provided in terminal 
+1. in terminal: python manage.py runserver
+2. ctrl-click local link provided in terminal
 
 to test if it works on heroku
 1. push most recent code to github
@@ -108,3 +108,16 @@ to test if it works on heroku
 5. select correct branch of github code
 6. click "deploy branch"
 7. Once build is completed, click "view" button
+
+# import os
+
+os.environ["DATABASE_URL"] = ''
+os.environ["AWS_SECRET_ACCESS_KEY"] = ''
+os.environ["USE_AWS"] = 'True'
+os.environ["AWS_ACCESS_KEY"] = ''
+os.environ["SECRET_KEY"] = ''
+os.environ["HOST"] = 'localhost'
+os.environ["PORT"] = '8000'
+os.environ["STRIPE_PUBLIC_KEY"] = ''
+os.environ["STRIPE_SECRET_KEY"] = ''
+os.environ["STRIPE_WH_SECRET"] = ''

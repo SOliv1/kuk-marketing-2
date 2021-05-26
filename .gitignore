@@ -4,13 +4,11 @@
 __pycache__/
 .theia
 .travis.yml
-env.py
 .env/
 .vscode
 .github
 .theia
 media
-video/
 mockups
 db.sqlite3
 .vscode-upload.json

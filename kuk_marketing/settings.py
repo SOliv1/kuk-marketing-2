@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 if os.environ.get("DEVELOPMENT"):
-    development = True
+   development = True
 else:
     debug = False
 
@@ -238,4 +238,4 @@ else:
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
-    DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+   # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

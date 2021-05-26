@@ -17,7 +17,7 @@
 1.          `git status `
 1. #BUGS  I encounted:-
 ##  Export(set in vscode:) your DATABASE_URL in Gitpod - very important!
-        export DATABASE_URL="Paste your PostGRES connection string in quotes"
+        export on="Paste your PostGRES connection string in quotes"
         then make your migrations
         then loaddata
         You have to migrate *before* your load other wise the database is never created.

@@ -30,7 +30,7 @@ example:
 DATABASES = {'default': dj_database_url.parse("postgres://<rest of postgres url here>")}
 10. add "import dj_database_url" under "import os" in settings.py file
 11. in terminal: python manage.py migrate
-12. in terminal: echo web: gunicorn django_todo.wsgi:application > Procfile
+12. in terminal: echo web: gunicorn django_kuk_marketing.wsgi:application > Procfile
 13. in terminal: heroku config:set DISABLE_COLLECTSTATIC=1
 heroku config:set DISABLE_COLLECTSTATIC=1 --app kuk-marketing-2
 checking for errors if collectatci does not work as expected:

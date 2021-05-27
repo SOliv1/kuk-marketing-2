@@ -1,6 +1,7 @@
 # KUK Marketing
 
-#### Table Of Contents
+## Table Of Contents
+
 * General Information
 * Live Demo
 * UX Introduction
@@ -14,10 +15,11 @@
 * Credits
 * Conclusion
 
-###  LIVE DEMO CAN BE FOUND AT HEROKU: https://kuk-milestone-4.herokuapp.com/
+### LIVE DEMO CAN BE FOUND AT HEROKU: https://kuk-milestone-4.herokuapp.com/
 
 ### README  Further information and alternative view via LINK HERE
-  README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvm
+
+  README.md <https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvm>
 
 ## UX Introduction - Platform for B2B lead - Visual appeal
 I wanted to create a visually appealing website to showcase the clean and classic look to a novice customer who is thinking of
@@ -32,17 +34,21 @@ Ideal additions to this website: a gallery; social-media; newsletters; Skype, Zo
 Join a community that drives sales, marketing, and product innovation and trendsetters driving growth on the internet.
 Translate business growth into sales and loyalty.
 
-#### Ideal Customer:
-##### Target businesses:
+## Ideal Customer:
+
+## Target businesses:
+
 * *Start-Up Business* - operates on a budget and wants strategic direction.
 * *Inspire An Audience* Those who want to invest in a fullstack premium package.
 * *Budget Awareness* - Those who would like to upgrade to a package without fully investing in premium package.
 
-#### Visitors to this website are looking for:
+## Visitors to this website are looking for:
+
 * Ideas that can be transformed into success for their *startup business* or keep on trend with what is driving growth sales via the internet.
 * This website is designed for those looking to translate their expertise into a viable proposition for their business and make it a reality.
 * Visitors can contact the website to discuss their objectives whether it be to build brand awareness, generate leads, or drive website traffic.
    The website designer aims to provide a format that is the `best fit`.
+
 1. A new customer who wants to discover more about and potentially buy the products on offer via the website to promote their business.
    A complete package for budget minded startup business.
 1. As a new visitor to the website I want to be able to navigate quickly and easily via the search box and can look up products by category / price / rating / name of product.
@@ -52,7 +58,8 @@ Translate business growth into sales and loyalty.
 1. Provide *User-stories* and *example websites*, to the website to encourage new and returning customers.
 
 
-## User Stories:
+## User Stories
+
 * As a customer, I want to be able to quickly look up the best products and services with a view to purchasing a complete website and branding startup package, so that I can order via the website from the company.
 I want to experiement with my ideas and engage with the web-company to find what suits or as they say `the best fit`:
 I want to edit / delete / and update with my own requriements by filling out the form and have them contact me with further information and ultimately purchase a suitable package to suit my budget.
@@ -63,7 +70,7 @@ I want to edit / delete / and update with my own requriements by filling out the
   **Satisfied Client**
 
 * I like the website packages available and the opportuntity to come up with my requriements for the `best fit` for improving my current website.
- * **Looking to Shine**
+ **Looking to Shine**
 
 * I like the idea of buying products and services directly from the website - gettting the quoted price and ordering the products and services I want.
   I can use a simple form to convey my requirements which will then be evaluated and then open up dialogue between KUKmarketing and myself the (potential)client.
@@ -77,6 +84,7 @@ I want to edit / delete / and update with my own requriements by filling out the
 
 
 ## This Website & Database is heavily based on the Code Institute (C.I.) Boutique-Ado e-commerce fullstack project.
+
 I chose **postgres** for my project, to use and demonstrate as a powerful fullstack database together with AWS bucket S3 storage facility and IAM users.  This is recommended by **C.I.** in the course.
 It features the excellent Boutique-Ado online project which I have copied and modified to suit the purposes of my own fullstack website project. My 'Services-App' on the website is mostly my own code gleaned from various C.I. projects and excercise, I have done during the course; chiefly (**C.I.**)'Thorin and Company and Bootstrap4' and my own Procol Harum project(**First Milestone**).
 I figured the ideas on this website were so excellent, how can one improve! I therefore have copied most if not all except 'Services App' which is my owm but once again inspired from other projects on the course;(see credits and acknowledgements at bottom of this page) from the Boutique Ado Fullstack full-functioning website,
@@ -84,7 +92,8 @@ which I found most interesting.  The challenge for me is to be able to build the
 My website Database consists of *Pages (to meet CRUD requirements via the Product / bag and Checkout apps - Create Read Update Delete) in a database*. A highly scalable server which stores data in a non-relational format.
 
 
-#### Add products via backend admin(‘Create’, 'Read', 'Update', 'Delete')
+## Add products via backend admin(‘Create’, 'Read', 'Update', 'Delete')
+
 This is how admin-users add products to the database. It contains a simple HTML form to collect the field attributes intending to store.
 The product collections are all categorised and stored in a json format and transferred to the database via `STATIC and MEDIA files` in `KUK - Settings`
 where it is stored remotely in a bucket at `AWS SERVICES`. The code is add . / commit -m "" / and push/ to GitHub and then channelled to Heroku which
@@ -94,12 +103,14 @@ less pressure and more peace of mind and watch more clearly the build process.
 
 
 ## Accessibility
+
 The pages are asscesible via buttons on the *Home page* and a menu accross the top with dropdown navigational menus.  The website is mobile friendly as well as compatible
 across ipad through to full-desktop. The about page can be accessed on the top right corner of the menu(home-page).
 The `contact page`  can be accessed via the 'Our Services' heading on the drop-down menu.  Also, from  `Get Quote` buttons throughout the website.
 
 
 ## Features
+
 The main feature I am showcasing in this website is the `CRUD` Functionality.
 The `postres database` and the admin backend sections.
 The E-commerce Shopping Cart with `Stripe` features.
@@ -120,7 +131,7 @@ Each Product or Service listed on the `home` page has an *edit button* that link
 Delete link for each product *(‘Delete’)*
 Each product form (on the Product-Management link accessed via dropdown on the home page) has a *delete_product* button that links to the `delete view`*.
 
-_*Please note :- In the *insert_product* function I have copied and tried to modify the *insert_product* imagefield 'custom-clearable' in order to insert and upload the images from an external computor.
+_*Please note :- In the *insert_product*function I have copied and tried to modify the*insert_product* imagefield 'custom-clearable' in order to insert and upload the images from an external computor.
   Unfortunaley, I have not had much success as some images work on the uploading image section and others may not. I consulted tutors and they suggested I revisit the AWS section of the course.
   Please note this issue only occurs on the deployed heroku site. Add the products and the image fields. I have since leaned that I need to check all image-names are in sync with each other from Gitpod through Github
   and finally to Heroku and chiefly the AWS bucket which stores the image needs to be able to grab the correct URL. I still have not mastered this as reflected on the website.
@@ -193,7 +204,8 @@ _*Please note :- In the *insert_product* function I have copied and tried to mod
 
 ## Deployment
 
-#### Github commands used in this project:
+## Github commands used in this project
+
 ```
 git add .
 git commit -m "final commit"
@@ -206,27 +218,29 @@ To revert to a previous commit - example below:
  commit ab202accf6e25351084a8a05b3d70a1ac71cd5f7 (HEAD -> master, origin/master, origin/HEAD)
  Author: Sara Oliver <s.oliver1@icloud.com>
  Date:   Wed Sep 30 23:12:48 2020 +0000
-
 ```
 
-#### Deployment to Github
+## Deployment to Github
+
 * Make sure the branch or folder as a publishing source exists in the repository. Example, before  publishing project site from the /docs folder on the master branch of that repository,
   Collaborator must create a /docs folder on the *master* branch of that repository.
 * On GitHub, navigate to site's repository.
 * Under repository name, click  Settings.
 * Under "GitHub Pages", use Source drop-down menu and select a publishing source.
 * More information found on Github:
-  https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site
+  <https://help.github.com/en/github/working-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site>
 
-#### Cloning a repository to GitHub Desktop
+## Cloning a repository to GitHub Desktop
+
 I clone one of my Boutique Ado to deploy locally on GitHub desktop.
 On GitHub, I navigate to the main page of the repository.
 Under my repository name, I click to clone my repository in Desktop. I follow the prompts in GitHub Desktop to complete the clone.
 
-###  Basic set up for my project and libraries
-*(see *CRUD functionality notes further down page*)
+## Basic set up for my project and libraries
 
- * https://validator.w3.org/ *
+*(see*CRUD functionality notes further down page*)
+
+* https://validator.w3.org/ *
 
   `https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template`
 
@@ -251,10 +265,13 @@ Under my repository name, I click to clone my repository in Desktop. I follow th
 
     AUTHENTICATION_BACKENDS = [
 ```
-##### Need to login by username in Django admin, regardless of `allauth`
+
+## Need to login by username in Django admin, regardless of `allauth`
+
     'django.contrib.auth.backends.ModelBackend',
 
-##### `allauth` specific authentication methods, such as login by e-mail
+## `allauth` specific authentication methods, such as login by e-mail
+
  ```
     ['allauth.account.auth_backends.AuthenticationBackend',
     ]
@@ -272,7 +289,9 @@ Under my repository name, I click to clone my repository in Desktop. I follow th
 
    1.   Getbootstrap.com > go to documentation and copy the starter template
 ```
-#### Font stories
+
+## Font stories
+
         *About Montsaratt and Roboto*
 
         <addr> **Montsaratt** copied from Googlefonts: https://fonts.google.com/specimen/Montserrat#about
@@ -294,7 +313,8 @@ Under my repository name, I click to clone my repository in Desktop. I follow th
         <Addr>-family: 'Roboto', sans-serif;</Addr>
 
         To contribute, see github.com/google/roboto*
-1.  <addr>  The old posters and signs in the traditional Montserrat neighborhood of Buenos Aires inspired Julieta Ulanovsky to design this typeface and rescue the beauty of urban typography that emerged in the first half of the twentieth century.
+
+1. <addr>  The old posters and signs in the traditional Montserrat neighborhood of Buenos Aires inspired Julieta Ulanovsky to design this typeface and rescue the beauty of urban typography that emerged in the first half of the twentieth century.
             As urban development changes that place, it will never return to its original form and loses forever the designs that are so special and unique. The letters that inspired this project have work, dedication, care, color, contrast, light and life, day and night! These are the types that make the city look so beautiful.
             The Montserrat Project began with the idea to rescue what is in Montserrat and set it free under a libre license, the SIL Open Font License.
             This is the normal family, and it has two sister families so far, Alternates and Subrayada. Many of the letterforms are special in the Alternates family,
@@ -309,16 +329,20 @@ Under my repository name, I click to clone my repository in Desktop. I follow th
             font-family: 'Roboto', sans-serif;</addr>
             python3 manage.py runserver to run the django server and test
     </addr>
-#### Deployment to Heroku
+
+## Deployment to Heroku
+
 Kindly given to me via Anna Greaves(tutor)as I had trouble logging in with previous commands.
 
-#### First we:
+## First we:
+
  npm install -g heroku
 
 Then, to login, use the command:
 heroku login -i *
 
-#### Clone the repository
+## Clone the repository
+
 Use Git to source code from local browser.
 (e.g. GitHub Pages or Heroku).
 When trying to deploy my project to Heroku I hit a bug *- AttributeError
@@ -332,10 +356,11 @@ $ heroku git:clone
 Deploy changes
 Make some changes to the code you just cloned and deploy them to Heroku using Git.
 
-#### Deploy changes
+## Deploy changes
+
 Make some changes to the code you just cloned and deploy them to Heroku using Git.
-```
-$ git add .
+    ```
+git add .
 $ git commit -am ""
 $ git push heroku master
 
@@ -346,14 +371,14 @@ $ git push heroku master
 >(1) Static data items:
 >Those data items whose extents lasts as long as the program execution time; such data items have manifest constant Lvalues. Every static data item must have been declared either in a function or routine definition, in a global declaration or as a label set by colon.
 >— The BCPL Reference Manual, 7.2 Space Allocation and Extent of Data Items
->     https://en.wikipedia.org/
+> https://en.wikipedia.org/
 
 
 **Passing Data from View to Template**  A very useful feature of using frameworks to actually set data on the server side and get it coming through to the client.
 Benefits of using frameworks is the fact that we can actually get server-side code to provide the frontend with data.
 Example:- Go to *apps.py*. Then add argument page_title=
 
-```from django.apps import AppConfig
+    ``` from django.apps import AppConfig
 
 class HomeConfig(AppConfig):
     name = 'home'
@@ -376,7 +401,7 @@ def about(request):
     """ view to return the about page """
 
     return render(request, 'services/about.html')
-```
+    ```
 
 **Reducing repetition**  using the *{% %} notation* template tags for statements (not for expressions).
 allowing us to use a *for loop* inside our HTML.  Standard Python *for loop* for number in list_of_numbers.
@@ -427,21 +452,21 @@ class CustomClearableFileInput(ClearableFileInput):
     initial_text = _('Current Image')
     input_text = _('')
     template_name = 'products/custom_widget_templates/custom_clearable_file_input.html'
-```
-### Features Left to Implement:
-			* Search box to search the website packages and products in a more cohesive and timely manner
-			* Sort code to sort through products and website categories
-			* Login form with password so users sign in securely using the password to access the database.	- DONE
-			* More links to other companies specialising in our products and services. 	* Links to other specialised SERVICE sites appropriate to this website.
-			* Contact Forms and social media to sign up for newsletters.
+    ```
+## Features Left to Implement:
+   * Search box to search the website packages and products in a more cohesive and timely manner
+   * Sort code to sort through products and website categories
+   * Login form with password so users sign in securely using the password to access the database.	- DONE
+   * More links to other companies specialising in our products and services. 	* Links to other specialised SERVICE sites appropriate to this website.
+   * Contact Forms and social media to sign up for newsletters.
             * Gallery of website examples and webpackages to view for visual impact
-			* Another possible  feature to be incorporated is to be able and rate the products and services we offer. - DONE
-			* Social media and blogs
-			* Chat page / Forum
+   * Another possible  feature to be incorporated is to be able and rate the products and services we offer. - DONE
+   * Social media and blogs
+   * Chat page / Forum
             * Zoom and Live Streaming for consultations with potential and existing leads / clients
             * Introduce a favicon to my website
-#### Libraries / requirements used in my project:
-```
+## Libraries / requirements used in my project:
+    ```
 asgiref==3.2.10
 boto3==1.14.46
 botocore==1.17.46
@@ -468,41 +493,44 @@ travis==0.0.3
 whitenoise==5.2.0
 ```
 
-#### Links to libraries
+## Links to libraries
 
-*	https://pypi.org/project/Flask-Bootstrap4/
+* https://pypi.org/project/Flask-Bootstrap4/
 
-*	https://www.fullstackpython.com/flask.html
+* https://www.fullstackpython.com/flask.html
 
-*	https://flask.palletsprojects.com/en/1.1.x/
+* https://flask.palletsprojects.com/en/1.1.x/
 
-*	https://www.mongodb.com/cloud/atlas
+* https://www.mongodb.com/cloud/atlas
 
-*	https://www.python.org/
+* https://www.python.org/
 
-*   https://jsonformatter.org/
+* https://jsonformatter.org/
 
 
- 1.  ```alt + up/down arrows to move a line or block of code up or down
+ 1.
+
+    ```alt + up/down arrows to move a line or block of code up or down
         alt + click` to select multiple regions
-1.
-1.   pip3 install django-crispy-forms
+        alt + click
+
+ 1. pip3 install django-crispy-forms
      pip3 install django-crispy-forms
      ```
 
-##  Deploying to heroku
+## Deploying to heroku
 
-1.         ```pip3 install pip3 install whitenoise
+1. ```pip3 install pip3 install whitenoise
            pip3 install gunicorn
            ```
 
 1. ` echo "env.py" >> .gitignore `
     ` nano .gitignore ` to check that the file is still there (then exit out) by pressing enter
-1.          `git status `
-   1.  To check heroku logs on the gitpod terminal:
+1. `git status`
+   1. To check heroku logs on the gitpod terminal:
        follow these steps f you quit the server with Ctrl+C then type
-    1.  `heroku login -i`
-    1.  `heroku config:set DISABLE_COLLECTSTATIC=1 --app kuk-milestone-4`
+   1. `heroku login -i`
+   1. `heroku config:set DISABLE_COLLECTSTATIC=1 --app kuk-milestone-4`
         and sign in, then run:
         heroku logs --tail -a kuk-milestone-4`
         Go to AWS login and create a bucket then the bucket policy and the user'
@@ -510,26 +538,32 @@ whitenoise==5.2.0
         pip3 install django dj-database-url
         pip3 install boto3
         pip3 install django-storages
+
    1.
-### JQuery and Java Script
+
+## JQuery and Java Script
+
 The project uses JQuery to simplify DOM manipulation.
 Java script for forms and validation.
 
-### Testing - see bugs and fixes below
-* https://validator.w3.org/nu/#l118c6 - There is further testing wihich needs addressing.
+## Testing - see bugs and fixes below
+
+* <https://validator.w3.org/nu/#l118c6> - There is further testing wihich needs addressing.
 127.0.0.1 - - [20/Mar/2020 12:05:52] "GET /get_categories HTTP/1.1" 500 -
 Encountered:
 * 505 error indicates a temporary problem, and sometimes that problem is very temporary. A site might be getting overwhelmed with traffic, for example. So, refreshing the page is always worth a shot. Most browsers use the F5 key to refresh, and also provide a Refresh button somewhere on the address bar. It doesn’t fix the problem very often, but it takes just a second to try.
 * Firefox / Chrome / Edge / - All appear to be working as so are the links.
 
 
-### BUGS  I encounted:-
+## BUGS  I encounted:-
+
 To be honest, I encountered many challenges on this coding journey, too numerous to mention here, as I have no time left.  All I can convey is that I am grateful to the
 Tutors who gave me ideas, pointers and all the trouble shooting tips included in the course as well as asking questions on Slack and looking for solutions on *Slack and https://stackoverflow.com/ .
 Although challengeing it required me to stretch my mind and I hope that I have the skills and resources to carry on with the profession in some shape or form in my business ventures.
 Below are some of the challenges I encountered in my project:-
 
-####  Export  DATABASE_URL in Gitpod - very important!
+## Export  DATABASE_URL in Gitpod - very important!
+
         export DATABASE_URL="Paste your PostGRES connection string in quotes"
         then make your migrations
         then loaddata
@@ -552,9 +586,10 @@ Slack community - *various borrowed code snippets* See below credits. I often ch
                      when some of the code did not work for me.  However it did
                      lead me on to thinking again about seeing a line of code highlighted in an error I had been seeing, and checking at the bottom of my jinga codes for these errors.
                      This experience gives me more confidence to debug code.
-### More Bugs and Problems I encountered whilst building this website:
 
-#### Merge isssues
+## More Bugs and Problems I encountered whilst building this website:
+
+## Merge isssues
 
 I had two websites going simultanously as I built this website mainly when one failed me I would go with the other one.  But I found out that perhaps this is not such a good idea as when it came to merging the websites
 to the master, I encountered *merge issues*.  I have done this procedure on my past websites and have not had much of a problem with merging but this time I did.  This is probably due to the complexity of the
@@ -565,7 +600,8 @@ Less - “less” is a pager program that may automatically open on the command 
 You can use the arrow keys or the page up/down keys to scroll around in Less. You can also use the “/” key to search for a specific part of the text and the “n” key to go to the next match.
 Use the “q” key to quit Less.
 >
-#### Explantion given to me when I queried steps in a procedure that I knew off by heart....
+## Explantion given to me when I queried steps in a procedure that I knew off by heart....
+
  ....
  and still encounterd issues in my accounts login programatic error
 
@@ -574,9 +610,9 @@ relation "django_site" does not exist
 LINE 1: ..."django_site"."domain", "django_site"."name" FROM "django_si...
                                                              ^
 Request Method:	GET
-Request URL:	https://kuk-milestone-4.herokuapp.com/accounts/login/
-Django Version:	3.1
-Exception Type:	ProgrammingError
+Request URL: <https://kuk-milestone-4.herokuapp.com/accounts/login/>
+Django Version: 3.1
+Exception Type: ProgrammingError
 Exception Value:
 relation "django_site" does not exist
 >LINE 1: ..."django_site"."domain", "django_site"."name" FROM "django_si...
@@ -585,7 +621,9 @@ relation "django_site" does not exist
 So we need to keep the secret keys the same.  The only time we should change the secret keys is once.  And that is if we are changing connecting to a different database.
 Once sorted with the issue in Django so the keys were correct, we then reset the database to a blank clean one."   Something to remember in future.
 *Credit goes to Stephen - Tutor at C. I. Thank you.*
-###### Reset my squlite database
+
+## Reset my squlite database
+
    1. I had to reset my local squlite database at one point due to migrations issues so I:
         need to delete the db.sqlite3 file locally in the root level of my project,
         then I had to go into each of my apps that have a migrations folder, and delete all of the files inside the migrations folder, except for the __init__.py file.
@@ -594,30 +632,36 @@ Once sorted with the issue in Django so the keys were correct, we then reset the
             `python3 manage.py migrate`
         This should reset my database.
 
-   1.   `cp - r` means copy recursively
-   1.   cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/*
+   1. `cp - r` means copy recursively
+   1. cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/*
 
-#### Media
+## Media
+
 Some of The photos and credits obtained and used in this site were obtained from *Spectator Shop ...*
 e.g. media - https://shop.spectator.co.uk ; https://Kaggle.com
 Other media images via my monthly subcription to ADOBE STOCK - https://stock.adobe.com/
 
-#### Acknowledgements
+## Acknowledgements
+
 I received inspiration for this project from:-
 
-- "*The Spectator* - https://shop.spectator.co.uk/
--  the colour of my buttons are attributed to Spectator Shop
--   Brian Machira - *CI Mentor*
-- Stephen from C.I. Tutor for trouble shooting databases
-- New Tutor from C. I. - Johann for trouble shooting image URLs on my website
-- Slack community - *various borrowed code snippets* which I then modify to suit my purposes, although
+* "*The Spectator* - https://shop.spectator.co.uk/
+
+* the colour of my buttons are attributed to Spectator Shop
+
+* Brian Machira - *CI Mentor*
+* Stephen from C.I. Tutor for trouble shooting databases
+
+* New Tutor from C. I. - Johann for trouble shooting image URLs on my website
+* Slack community - *various borrowed code snippets* which I then modify to suit my purposes, although
                      some of the code did not work for me I had to rethink how to improve this.
                      It also gives me extra confidence to debug code.
 
-####  Further CREDITS AND ACKNOWLEDGEMENTS
+## Further CREDITS AND ACKNOWLEDGEMENTS
 
-#### CREDits and  ACKNOWLEDGEMENTS  (Other website acknowledgemnts)
-1.  The whole website code was copied from conception to completion and NOT Cloned.
+## CREDits and  ACKNOWLEDGEMENTS  (Other website acknowledgemnts)
+
+1. The whole website code was copied from conception to completion and NOT Cloned.
 Each page was copied and modified to suit the purposes of my website,
     from the *Code Institue(C. I.) Fullstack final e-commerce website*.
     Other ideas and layouts came from my previous milestones:-
@@ -632,41 +676,45 @@ Each page was copied and modified to suit the purposes of my website,
      And  `http://Spectator.co.uk`
      and colour red touches and buttons-colour-scheme: #d30037;
 
-### Further ACKNOWLEDGEMENTS and all  Credits go to *ckz8780 Chris Zielinski* who created the excellent *Boutique Ado Website*.
-1.      Most of the products are taken from the C.I. dataset which originates from https://www.kaggle.com/  and modified to suit the purpose of this website.
+## Further ACKNOWLEDGEMENTS and all  Credits go to *ckz8780 Chris Zielinski* who created the excellent *Boutique Ado Website*.
+
+1. Most of the products are taken from the C.I. dataset which originates from https://www.kaggle.com/  and modified to suit the purpose of this website.
         I do not claim to make the code from this website my own. But I did build this website from conception to completion in an effort to understand the process more clearly.
         Any intention to pass off any code as my own was and is purely unintentional.
-1.      The Slack Community for any questions queries and for helping out whenever I need it.
-1.      Products and fixtures credits images 'Tailor Brands https://studio.tailorbrands.com/ :
+1. The Slack Community for any questions queries and for helping out whenever I need it.
+1. Products and fixtures credits images 'Tailor Brands https://studio.tailorbrands.com/ :
         *Brand-book-1_VvE5VhU.webp*, *Business-deck-1-1 (1).webp*, *Business-deck-1-1 (1).webp*
         Also branding and marketing ideas are based the Tailor Brands website.
-1.      New Products all credits go to: Cool wine accesories and branding image and copied text credits from https://www.igopromo.co.uk/
-1.      New Products all credits go to: https://www.igopromo.co.uk/inspiration-pages/sustainable-products/bandana-rpet-multi-functional-scarf-all-over-printing/p4348-master
-1.      Other website Ideas and inspiration - https://www.walkeragency.co.uk/workThan
-1.      The fantastic tutors for their unvaluable assistance and
-1.      Student Care for being so encouraging when I felt like giving up at times.
-1.      Finally my Family deserve a mention for supporting me whilst I did this course and for that I thank you for being there.
+1. New Products all credits go to: Cool wine accesories and branding image and copied text credits from https://www.igopromo.co.uk/
+1. New Products all credits go to: https://www.igopromo.co.uk/inspiration-pages/sustainable-products/bandana-rpet-multi-functional-scarf-all-over-printing/p4348-master
+1. Other website Ideas and inspiration - <https://www.walkeragency.co.uk/workThan>
+1. The fantastic tutors for their unvaluable assistance and
+1. Student Care for being so encouraging when I felt like giving up at times.
+1. Finally my Family deserve a mention for supporting me whilst I did this course and for that I thank you for being there.
 1.
-1.    * Product app Tutor suggestions from support Tutor*
-1.     *Given to me by Kevin at C.I. tutor support*
-1.      The easiest fix would be to empty your DB on Heroku: https://stackoverflow.com/questions/4820549/how-to-empty-a-heroku-database
+1. *Product app Tutor suggestions from support Tutor*
+1. *Given to me by Kevin at C.I. tutor support*
+1. The easiest fix would be to empty your DB on Heroku: https://stackoverflow.com/questions/4820549/how-to-empty-a-heroku-database
         Then export the products from your local project to a fixtures file (Django can create the JSON files automatically for you):
         python manage.py dumpdata products.product --indent 4
         Also django documentation:
-1.      django documentation: creating forms for the database:
-        https://docs.djangoproject.com/en/dev/topics/forms/modelforms/#overriding-the-default-fields
+1. django documentation: creating forms for the database:
+        <https://docs.djangoproject.com/en/dev/topics/forms/modelforms/#overriding-the-default-fields>
 1.
 1.
-1.      Stephen and Johann for assisting me in successfully renduring my image urls eg.
-        https://kuk-milestone-4.s3.amazonaws.com/media/image-name-here
+1. Stephen and Johann for assisting me in successfully renduring my image urls eg.
+        <https://kuk-milestone-4.s3.amazonaws.com/media/image-name-here>
 
         https://kuk-milestone-4.s3.amazonaws.com/media/image-name-here
+
 1.
 
 ## Conclusion
+
 Overall I feel satisfied with my project and enjoyed creating it despite numerous issues along the way.
 It was certainly challenging but I think the effort was worth it.  I am looking forward to the next chapter.
 
-** Thank you to all! **
+**Thank you to all!**
 
- *This website project is for educational purposes only*
+*This
+*This website project is for educational purposes only*

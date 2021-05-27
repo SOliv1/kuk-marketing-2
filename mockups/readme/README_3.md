@@ -1,7 +1,7 @@
  ## Toasts 
     https://getbootstrap.com/docs/4.5/components/toasts/
 
- 1.         Inside the main templates/includes folder let's add an additional subfolder to contain all the toasts
+ 1. Inside the main templates/includes folder let's add an additional subfolder to contain all the toasts
                     These toasts will be small HTML snippets that will pop up when a user performs an action
                     such as adding something to their shopping bag.
                     success toast inside a file called toast success.html.

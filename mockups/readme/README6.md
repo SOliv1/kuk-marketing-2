@@ -2,8 +2,7 @@
     * https://validator.w3.org/ *
   `https://getbootstrap.com/docs/4.4/getting-started/introduction/#starter-template`
 
-
-  1.  pip install django
+  1. pip install django
     pippytho install autopep8 (for white space and gr8 for indentations etc)
 1.  django-admin startproject kuk_marketing 
     To add a boilerplate: type html and a list and basic boilerplate for an html5 file.  gitpod shortcut or press arrow up then select ! press enter to create boilerplate.
@@ -17,7 +16,9 @@
 1.  pip3 install django-allauth
 1.  configure settings
 1. install travis
-    #### travis https://travis-ci.org
+
+## travis <https://travis-ci.org>
+
         which version 
         `python -V`
     ```AUTHENTICATION_BACKENDS = [
@@ -40,8 +41,9 @@
    1.   cp -r ../.pip-modules/lib/python3.8/site-packages/allauth/templates/*
 
             This copies or the allauth templates in the packages so we can style them at will.
-1.      Getbootstrap.com > go to documentation and copy the starter template 
-    ### font stories
+   1. Getbootstrap.com > go to documentation and copy the starter template 
+
+ ## font stories
     *About Roboto
         Roboto has a dual nature. It has a mechanical skeleton and the forms are largely geometric. At the same time, the font features friendly and open curves. While some grotesks distort their letterforms to force a rigid rhythm, Roboto doesn’t compromise, allowing letters to be settled into their natural width. This makes for a more natural reading rhythm more commonly found in humanist and serif types.
 
@@ -62,22 +64,23 @@
             font-family: 'Roboto', sans-serif;</addr>
 
 ## Home app
-1.      `python3 manage.py startapp home`
+
+1. `python3 manage.py startapp home`
                 mkdir -p home/templates/home
-1.      add the home app : `python3 manage.py startapp home`
-1.      then create a templates directory in the home app > mkdir -p to create parents as required.
+1. add the home app : `python3 manage.py startapp home`
+1. then create a templates directory in the home app > mkdir -p to create parents as required.
                     `mkdir -p home/templates/home`
                         And then right-click the inner *home directory*, new file and create *index.html*
 
-1.          *extend the base template with extends base.html
+1. *extend the base template with extends base.html
                 And load the static tag with load static, so we can use static files as needed.
                 Lastly, we just need a content block with some content in it. So let's start with block content.
                 And inside that, I'll just add a simple h1 with class equals display-4 and text-success
                 to ensure bootstrap is working.  And I'll add the text it works.*
-1.          *view* to render this template so let's head into **views.py*
+1. *view* to render this template so let's head into **views.py*
                         And define an index view.
                         Which will simply render the index template.
-1.          *class inheritance* = it's going to be very important as you progress
+1. *c inheritance* = it's going to be very important as you progress
             in your understanding of python and object-oriented programming in general.
              - remember that if you need functionality *from one class to be available in another*.
             All you need to do is inherit the one you need.

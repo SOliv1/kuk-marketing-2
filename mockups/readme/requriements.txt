@@ -1,5 +1,5 @@
 
-Usage:   
+Usage:
   pip3 <command> [options]
 
 Commands:

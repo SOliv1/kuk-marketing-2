@@ -74,6 +74,9 @@ ALLOWED_HOSTS = [os.environ.get('HOSTNAME')]
 
 DATABASES = {'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))}
 
+
+check on settings which database: print(DATABASES)
+
 3. IMPORTANT - Restart vscode before checking if this works. Envroment variable are activated on restarting vscode.
 4. set SECRET_KEY in config vars on heroku dashboard
 

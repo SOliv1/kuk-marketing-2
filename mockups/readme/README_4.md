@@ -1,22 +1,24 @@
-  1.  `alt + up/down arrows` to move a line or block of code up or down
+  1. `alt + up/down arrows` to move a line or block of code up or down
 
         `alt + click` to select multiple regions
-1.
+  1.
 
-1.   pip3 install django-crispy-forms
+  1. pip3 install django-crispy-forms
      pip3 install django-crispy-forms
 
 
- ## Deploying to heroku
+## Deploying to heroku
 
-1.        pip3 install pip3 install whitenoise
+1. pip3 install pip3 install whitenoise
            pip3 install gunicorn
 
 1. ` echo "env.py" >> .gitignore `
     ` nano .gitignore ` to check that the file is still there (then exit out) by pressing enter
-1.          `git status `
+1. `git status`
 1. #BUGS  I encounted:-
-##  Export(set in vscode:) your DATABASE_URL in Gitpod - very important!
+
+## Export(set in vscode:) your DATABASE_URL in Gitpod - very important!
+
         export on="Paste your PostGRES connection string in quotes"
         then make your migrations
         then loaddata

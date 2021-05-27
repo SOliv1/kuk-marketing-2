@@ -26,7 +26,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 # SECURITY WARNING: don't run with debug turned on in production!
 
 if os.environ.get("DEVELOPMENT"):
-   development = True
+    development = True
 else:
     debug = False
 
@@ -83,7 +83,6 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, 'templates'),
             os.path.join(BASE_DIR, 'templates', 'allauth'),
-            os.path.join(BASE_DIR, 'templates', 'video'),
             ],
         'APP_DIRS': True,
         'OPTIONS': {

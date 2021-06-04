@@ -25,14 +25,14 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-if os.environ.get("DEVELOPMENT"):
-    development = True
-else:
-    debug = False
+#if os.environ.get("DEVELOPMENT"):
+    #development = True
+#else:
+debug = True
 
 
-ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost']
-# ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+#ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 
 # Application definition
@@ -237,4 +237,7 @@ else:
     EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASS')
     DEFAULT_FROM_EMAIL = os.environ.get('EMAIL_HOST_USER')
 
-   # DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+# Default primary key field type
+# https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
+
+    DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'

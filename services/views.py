@@ -1,5 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404, HttpResponse
 from django.contrib import messages 
+from . models import Contact
 # from .services import forms
 
 
@@ -19,10 +20,18 @@ def why_kensington_fields(request):
 
 
 def contact(request, methods=["GET", "POST"]):
-    """ A view to contact us page """
-    request.GET
-
-    return render(request, 'services/contact.html')
+    if request.method == "POST":
+        name=request.POST.get('name')
+        email=request.POST.get('email')
+        package_type=request.POST.get('package_type')
+        description=request.POST.get('description')
+        print(name, email, package_type, description)
+        contact = Contact(name=name, email=email, package_type=package_type, description=description)
+        contact.save()
+        messages.info(request, 'Thanks for contacting!')
+        return render(request, 'services/contact.html')
+    else:
+        return render(request, 'services/contact.html')
 
     """ view-link to return about us menu on main-nav bar"""
 

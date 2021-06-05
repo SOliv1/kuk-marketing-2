@@ -30,33 +30,43 @@
             <h4 class="display-4 logo-font text-black, main-header.style">
                 Contact Us
             </h4>
+            {% for message in messages%}
+<div class="alert alert-danger" role="alert">
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+        {{ message }}
+</div>
+{% endfor %}
                  <!-- form requirements-start-->
-                <form method="POST" name="sentRequirements" id="contactForm">
+                <form method="POST" name="sentRequirements" id="contactForm" action="">
+                    {% csrf_token %}
+                    {{ form|crispy }}
                     <div class="control-group-requirements">
                         <div class="form-group-requirements floating-label-form-group controls">
                             <label>Name</label>
-                            <input type="text" class="form-control" placeholder="Name" name="name" id="name" required data-validation-required-requirements="Please enter your name.">
+                            <input type="text" class="form-control" placeholder="" name="name" id="name" required data-validation-required-requirements="Please enter your name.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
                     <div class="control-group">
                         <div class="form-group-requirements floating-label-form-group controls">
                             <label for="contactFormControlInput1">Email address</label>
-                            <input type="emailAdress" class="form-control" placeholder="Email Address" name="email-adress" id="email" required data-validation-required-message="Please enter email address.">
+                            <input type="email" class="form-control" placeholder="" name="email" id="email" required data-validation-required-message="Please enter email address.">
                             <p class="help-block text-danger"></p>
                         </div>
                     </div>
-                  	<div class="control-group-requirements>
-                        <label for="contactFormControlSelect1">Select a Package</label >
-                        <select class="form-control" id="contactFormControlSelect1>
-                            <option>property requirements</option >
-                            <option>One or two beds</option >
-                            <option>A whole house for you and your fellow students!</option >
+                  	<div class="control-group">
+                        <label for="contactFormControlSelect1">Select a Package</label>
+                        <select class="form-control" id="package_type" name="package_type">
+                            <option value="Bedrooms with study and own bathroom">Bedrooms with study and own bathroom</option>
+                            <option value="Bedrooms with study">Bedrooms with study</option>
+                            <option value="A whole house for you and your fellow students!">A whole house for you and your fellow students!</option>
                         </select>
                     </div>
-                    <div class="control-group-requirements">
+                    <div class="control-group">
                         <label for="contactFormControlTextarea" rows="1">Please enter any other requirements</label>
-                        <textarea class="form-control" id="contactFormControlTextarea1" rows="8"></textarea>
+                        <textarea class="form-control" id="description" name="description" rows="8"></textarea>
                         <br>
                         <div id="requirements-success">
                             <div class="form-group-requirements">
@@ -64,8 +74,7 @@
                             </div>
                         </div>
                     </div>
-                    {% csrf_token %}
-                    {{ form|crispy }}
+                    
                 </form>
 
             </div>

@@ -4,8 +4,17 @@
 
 {% block page_header %}
     <div class="container header-container">
+        <hr>
+        <hr>
         <div class="row">
-            <div class="col"></div>
+            <div class="col-md-4">
+                <a href="{% url 'home' %}" class="btn btn-outline-black rounded-0 btn-lg">Home</a>
+                    <span class="icon">
+                        <i class="fas fa-chevron-left"></i>
+                    </span>
+                    <span class="text-uppercase">Go Home</span>
+                </a>
+            </div>
         </div>
     </div>
 {% endblock %}
@@ -104,7 +113,7 @@
                         </table>
                     </div>
                 {% else %}
-                    <p class="lead mb-5">Your cart empty.</p>
+                    <p class="lead mb-5">Your Deposit Box is empty.</p>
                     <a href="{% url 'products' %}" class="btn btn-outline-black rounded-0 btn-lg">
                         <span class="icon">
                             <i class="fas fa-chevron-left"></i>
@@ -112,7 +121,14 @@
                         <span class="text-uppercase">Keep Looking</span>
                     </a>
                 {% endif %}
-            </div>
+            </div> 
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-md-4 ml-auto"><h4>
+            <a href="{% url 'contact' %}" class="view-now-button btn btn-lg rounded-0 text-uppercase py-3">Book Deposit</a>
+            </h4>
         </div>
     </div>
 {% endblock %}

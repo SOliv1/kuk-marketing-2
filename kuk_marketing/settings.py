@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 DEBUG = True
 
 
-ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost', '127.0.0.1']
 #ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 

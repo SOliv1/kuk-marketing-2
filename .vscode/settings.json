@@ -1,6 +1,6 @@
 
 {
-    "python.pythonPath": "env\\Scripts\\python.exe",
+    "python.pythonPath": "/home/keva/envs/kuk/bin/python",
 
 
     "python.terminal.activateEnvironment": true,

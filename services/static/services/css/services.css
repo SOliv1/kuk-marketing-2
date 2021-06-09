@@ -88,6 +88,13 @@
     box-sizing: border-box;
 }
 
+a {
+    color: #cc0000;
+    text-decoration: none;
+    background-color: transparent;
+    text-align: center;
+}
+
 .content-container {
     padding-top: 65px;
     padding-bottom: 75px;

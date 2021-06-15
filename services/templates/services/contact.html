@@ -71,10 +71,9 @@
     <span class="sr-only">Next</span>
   </a>
 </div>
-            
-            <h4 class="display-4 logo-font text-black, main-header.style">
-                Contact Us
-            </h4>
+    <h4 class="display-4 logo-font text-black, main-header.style">
+        Contact Us
+    </h4>
             {% for message in messages%}
 <div class="alert alert-danger" role="alert">
         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
@@ -82,7 +81,7 @@
         </button>
         {{ message }}
 </div>
-{% endfor %}
+        {% endfor %}
                  <!-- form requirements-start-->
                 <form method="POST" name="sentRequirements" id="contactForm" action="">
                     {% csrf_token %}
@@ -134,7 +133,7 @@
             </blockquote>
         </div>
         <div class="card mb-3">
-            <img class="img-img-center img-fluid" src="\media\1-croppedhooray.png"
-            class="card-img-bottom" alt="1-hooray-cropped">
+            <img class="img-img-center img-fluid" src="\media\top-half.jpg"
+            class="card-img-bottom" alt="hooray">
         </div>
 {% endblock %}

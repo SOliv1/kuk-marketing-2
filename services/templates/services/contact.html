@@ -6,7 +6,6 @@
 {% endblock %}
 
 
-
 {% block extra_meta %}
     <!-- favicon files -->
     <link rel="shortcut icon" type="image\png" sizes="32x32" href="\static\favicon\favicon-32x32.png">
@@ -23,6 +22,11 @@
 {% block page_header %}
 
 <div class="container header-container">
+    <div class="row justify-content-sm-center">
+        <img class="card-img sm-transparent" src="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/top-half.jpg">
+    </div>
+</div>
+<div class="container">
     <div class="opaque-overlay">&nbsp;</div>
     <div class="row h-100">
         <div class="col-lg-7 col-md-6 my-auto">
@@ -66,7 +70,7 @@
                         </select>
                     </div>
                     <div class="control-group">
-                        <label for="contactFormControlTextarea" rows="1">Please enter any other requirements</label>
+                        <label for="contactFormControlTextarea" rows="1">Please enter any other requirements including arrange a deposit</label>
                         <textarea class="form-control" id="description" name="description" rows="8"></textarea>
                         <br>
                         <div id="requirements-success">
@@ -91,9 +95,6 @@
             </blockquote>
         </div>
 
-        <div class container>
-        <div class="row justify-content-sm-center">
-            <img class="card-img bg-transparent" src="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/top-half.jpg">
-        </div>
+        
     </div>
 {% endblock %}

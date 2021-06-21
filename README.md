@@ -3,7 +3,7 @@
 # KUK Marketing
 [![Bld Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 [![wakatime](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg)](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2)
-
+[![OSSAR](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/ossar-analysis.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/ossar-analysis.yml)
 
 
 

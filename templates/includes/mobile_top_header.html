@@ -23,7 +23,7 @@
 <li class="list-inline-item dropdown">
     <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
-            <div><i class="fas fa-user fa-lg"></i></div>
+            <div><i class="fas fa-user-graduate"></i></div>
             <p class="my-0">My Account</p>
         </div>
     </a>
@@ -46,9 +46,9 @@
             <div><i class="fas fa-shopping-bag fa-lg"></i></div>
             <p class="my-0">
                 {% if grand_total %}
-                    ${{ grand_total|floatformat:2 }}
+                    &#163;{{ grand_total|floatformat:2 }}
                 {% else %}
-                    $0.00
+                    &#163;0.00
                 {% endif %}
             </p>
         </div>

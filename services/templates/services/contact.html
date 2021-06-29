@@ -22,9 +22,10 @@
 {% block page_header %}
 
 <div class="container header-container">
-    <div class="row justify-content-sm-center">
-        <img class="card-img sm-transparent" src="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/top-half.jpg">
-    </div>
+    <div style="padding: 20px;">
+        <img class="card-img bg-transparent" src="https://kuk-marketing-2.s3.eu-west-2.amazonaws.com/media/top-half.jpg">
+
+     </div>
 </div>
 <div class="container">
     <div class="opaque-overlay">&nbsp;</div>
@@ -36,13 +37,13 @@
             </h4>
             {% for message in messages%}
 
-<div class="alert alert-danger" role="alert">
-        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <div class="alert alert-danger" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
             <span aria-hidden="true">&times;</span>
         </button>
         {{ message }}
-</div>
-{% endfor %}
+    </div>
+    {% endfor %}
         <!-- form requirements-start-->
             <form method="POST" name="sentRequirements" id="contactForm" action="">
                     {% csrf_token %}
@@ -94,6 +95,6 @@
             </blockquote>
         </div>
 
-        
+
     </div>
 {% endblock %}

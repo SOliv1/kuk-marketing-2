@@ -25,10 +25,11 @@ SECRET_KEY = os.environ.get("SECRET_KEY", 'my secret key here')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 
-#if os.environ.get("DEVELOPMENT"):
-    #development = True
-#else:
-DEBUG = True
+# if os.environ.get("DEVELOPMENT"):
+    # development = True
+# else:
+# DEBUG = False
+DEBUG = 'DEVELOPMENT' in os.environ
 
 
 ALLOWED_HOSTS = ['kuk-marketing-2.herokuapp.com', 'localhost', '127.0.0.1', 'www.gradpads.net']

@@ -4,6 +4,7 @@
 [![Bld Status](https://travis-ci.com/SOliv1/kuk-marketing-2.svg?branch=master)](https://travis-ci.com/SOliv1/kuk-marketing-2)
 [![wakatime](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2.svg)](https://wakatime.com/badge/github/SOliv1/kuk-marketing-2)
 [![OSSAR](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/ossar-analysis.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/ossar-analysis.yml)
+[![Jekyll site CI](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/jekyll.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/jekyll.yml)
 
 
 
@@ -681,3 +682,5 @@ It was certainly challenging but I think the effort was worth it.  I am looking 
 ** Thank you to all! **
  
  *This website project is for educational purposes only*
+ 
+ [![Jekyll site CI](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/jekyll.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/jekyll.yml)

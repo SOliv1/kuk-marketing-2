@@ -31,7 +31,22 @@
 >### README is located inside the MOCKUPS FOLDER Further information and alternative view via LINK HERE
 > README.md https://1drv.ms/w/s!AgMQTPoqZgRAjBzcw6gYVD7gImdt?e=5XbCvmgit 
 > Location of `Mockups Folder` is located directly under Media Folder directly located under Kuk_marketing app.
-  
+
+>** 2023 - Latest UPDATE - WHERE AS i HAD A DATABASE AND COLLECTION OF PACKAGES; HEROKU DECIDED TO CHARGE FOR THE HOBBY POSTGRES DATABASE, i HAVE DEDICED TO CANCEL OUT MY PACKAGES FOR NOW UNTIL WHETHER OR NOT I DECIDE IT IS WORTH KEEPING THE DATABASE GOING ON A PAY MONTHLY BASIS.  ALTHOUGH ON ITS OWN THE BASIC PAID DATASE IS AFFORDABLE; IT IS WHEN YOU RUN SEVERAL OF THEM; YOU HAVE TO SUDDENLY DECIDE TO UPDATE YOUR PACKAGE PRICES SO YOU CAN INCORPORATE THEM INTO YOUR FUTURE PROJECTS.  i AM NOT A HAPPY BUNNY - A CASE OF PAY MORE FOR LESS IN MY OPINION! **
+
+## UX Introduction - Platform for B2B lead - Visual appeal
+I wanted to create a visually appealing website to showcase the clean and classic look to a novice customer who is thinking of 
+of purchasing an initial start up project and wants something simple and straight forward without having to think too much about what they require.
+(we can help here by filling out a form accessed via buttons throughout the website.)
+A website where consumers can purchase with a budget in mind, either upgrading and / or investing in a website package.  
+This website celebrates the user's ability to evaluate and purchase products and services with a view for them *to capture an online audience to their own website and ultimately promote and retain loyalty*.
+Encourage and promote the user update / upgrade in order to captivate a target audience on desktop, mobile, and tablet. 
+Drive leads to promote business awareness via website online-packages; purchase branded and non branded products to target audience.
+The website is a B2C emotion driven and appeals to the benefits of users by encouraging visual interaction and engagement via website packages, products and gift or corporate brand or non branded purchases; and contact forms with requirements dropdown box.
+Ideal additions to this website: a gallery; social-media; newsletters; Skype, Zoom and other live streaming for on-line interaction between consumers and marketeers.
+Join a community that drives sales, marketing, and product innovation and trendsetters driving growth on the internet.  
+Translate business growth into sales and loyalty.
+
 ## UX Introduction - Platform for B2B lead - Visual appeal
 I wanted to create a visually appealing website to showcase the clean and classic look to a novice customer who is thinking of 
 of purchasing an initial start up project and wants something simple and straight forward without having to think too much about what they require.

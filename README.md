@@ -6,7 +6,7 @@
 [![OSSAR](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/ossar-analysis.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/ossar-analysis.yml)
 [![Django CI](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/django.yml/badge.svg?branch=master)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/django.yml)
 [![Jekyll site CI](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/jekyll.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/jekyll.yml)
-[![CodeQL](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/codeql.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/codeql.yml)
+[![CodeQL](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/codeql.yml/badge.svg)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/codeql.yml)[![Upload Python Package](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/python-publish.yml/badge.svg?branch=master)](https://github.com/SOliv1/kuk-marketing-2/actions/workflows/python-publish.yml)
 
 
 

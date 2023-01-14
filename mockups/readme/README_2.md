@@ -32,7 +32,7 @@
             `python3 manage.py loaddata categories`
             `python3 manage.py loaddata products`
 
-            check it out - python3 manage.py runserver - go to admin
+            check it out - ****python3 manage.py runserver**** - go to admin
 
 
         1. 1.          copy our project-level urls.py
